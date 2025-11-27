@@ -57,6 +57,20 @@
   font-family: "Satoshi", sans-serif;
 }
 
+@font-face {
+  font-family: "Clash Display";
+  src:
+    url("/fonts/clash/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("/fonts/clash/ClashDisplay-Semibold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-clash {
+  font-family: "Clash Display", sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -65,7 +79,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Clash Display", sans-serif;
   font-weight: 700;
 }
 
