@@ -12,20 +12,18 @@ export default function Header() {
       <div className="relative w-full flex items-center">
 
         {/* LOGO */}
-
         <div className="pl-0 ml-4 relative h-20 w-25">
           <Image
             src="/logo.png"
             alt="Logo"
             fill
-            sizes="1"
+            sizes="(max-width: 768px) 100px, 150px"
             className="object-cover rounded-full"
             loading="eager"
           />
         </div>
 
         {/* NAV Desktop */}
-
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
           <Link className="text-lg font-medium hover:text-gray-400 transition-colors" href="/">Home</Link>
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#menu">Menu</Link>
@@ -33,21 +31,24 @@ export default function Header() {
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#contact">Contact</Link>
         </nav>
 
-        {/* BOTON MOBILE */}
-        <button
-          className="md:hidden ml-auto mr-6 text-3xl"
+        {/* --- HAMBURGER ANIMATION --- */}
+        <div
+          className="md:hidden ml-auto mr-6 z-[60] relative"
           onClick={() => setOpenMenu(!openMenu)}
         >
-          ☰
-        </button>
+          <div id="burger" className={openMenu ? "open" : ""}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
 
         {/* NAV Mobile */}
-
         <div
-          className={`absolute top-full left-0 right-0 md:hidden bg-white shadow-md overflow-hidden transition-all duration-300
-          ${openMenu ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"}`}
+          className={`fixed top-0 right-0 h-screen w-[70%] max-w-sm bg-white shadow-2xl z-50 transition-transform duration-500 ease-in-out
+          ${openMenu ? "translate-x-0" : "translate-x-full"}`}
         >
-          <nav className="flex flex-col items-start gap-4 px-6 py-4">
+          <nav className="flex flex-col items-start gap-6 px-8 pt-32 h-full">
             <Link onClick={() => setOpenMenu(false)} className="text-lg font-medium" href="/">Home</Link>
             <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#menu">Menu</Link>
             <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#about">About Us</Link>

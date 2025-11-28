@@ -28,3 +28,43 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* === Hamburguer Animation === */
+
+#burger {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 60; /* Higher than the menu */
+}
+
+/* Style the three lines */
+#burger > div {
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: 0.5s;
+  border-radius: 9999px;
+}
+
+/* === Animation Logic (React State Version) === */
+
+/* When the "open" class is present on the parent, transform the lines */
+
+/* Line 1: Rotate and move down */
+#burger.open > div:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+}
+
+/* Line 2: Fade out */
+#burger.open > div:nth-child(2) {
+  opacity: 0;
+}
+
+/* Line 3: Rotate and move up */
+#burger.open > div:nth-child(3) {
+  transform: translateY(-15px) rotate(-45deg);
+}
