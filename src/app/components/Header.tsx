@@ -42,14 +42,18 @@ export default function Header() {
         </button>
 
         {/* NAV Mobile */}
-        {openMenu && (
-          <nav className="flex flex-col items-start gap-4 px-6 py-4 md:hidden bg-white shadow-md">
+
+        <div
+          className={`absolute top-full left-0 right-0 md:hidden bg-white shadow-md overflow-hidden transition-all duration-300
+          ${openMenu ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"}`}
+        >
+          <nav className="flex flex-col items-start gap-4 px-6 py-4">
             <Link onClick={() => setOpenMenu(false)} className="text-lg font-medium" href="/">Home</Link>
             <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#menu">Menu</Link>
             <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#about">About Us</Link>
             <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#contact">Contact</Link>
           </nav>
-        )}
+        </div>
       </div>
     </header>
   );
