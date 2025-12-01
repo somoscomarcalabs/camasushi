@@ -1,5 +1,5 @@
 import { test, expect, describe, beforeEach } from 'vitest';
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import Header from './Header';
 
 
@@ -31,4 +31,10 @@ describe("Header Component behavior", () => {
 
 })
 
-
+test("clicking hamburger opens mobile menu", () => {
+  render(<Header />);
+  const hamburger = screen.getByTestId("burger-button");
+  const mobileNav = screen.getByTestId("mobile-menu");
+  fireEvent.click(hamburger);
+  expect(mobileNav).toHaveClass("translate-x-0");
+})
