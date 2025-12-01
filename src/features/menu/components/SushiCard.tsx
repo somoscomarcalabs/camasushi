@@ -18,6 +18,7 @@ export default function SushiCard({ sushi }: SushiProps) {
       <Image src={sushi.image} alt={sushi.name} width={300} height={200} />
       <h3>{sushi.name}</h3>
       <p>{sushi.description}</p>
+      <span>${sushi.price.toLocaleString('es-AR')}</span>
     </div>
   )
 }
