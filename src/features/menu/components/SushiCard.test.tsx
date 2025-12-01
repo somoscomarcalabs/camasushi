@@ -10,7 +10,8 @@ describe("SushiCard", () => {
     description: "description text",
     is_fried: false,
     type: "Roll",
-    price: 1000
+    price: 1000,
+    image: '/images/pacu.jpg'
   };
 
   test("It renders the sushi name", () => {
@@ -24,5 +25,20 @@ describe("SushiCard", () => {
   });
 })
 
+test("SushiCard renders the sushi image with the correct alt text", () => {
+  const mockSushi = {
+    id: 1,
+    name: "Roll de Pacú",
+    description: "description text",
+    is_fried: false,
+    type: "Roll",
+    price: 1000,
+    image: '/images/pacu.jpg'
+  };
+
+  render(<SushiCard sushi={mockSushi} />);
+  expect(screen.getByAltText(/roll de pacú/i)).toBeInTheDocument();
+  expect(screen.getByRole('img', { name: new RegExp(/roll de pacú/i) })).toBeInTheDocument();
+})
 
 
