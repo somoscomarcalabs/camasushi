@@ -14,3 +14,16 @@ test("SushiCard renders the sushi name", () => {
   render(<SushiCard sushi={mockSushi} />)
   expect(screen.getByText(/roll de pacú/i)).toBeInTheDocument();
 });
+
+test("SushiCard redners the sushi ingredients", () => {
+  const mockSushi = {
+    id: 1,
+    name: "Roll de Pacú",
+    description: "description text",
+    is_fried: false,
+    type: "Roll",
+    price: 1000
+  }
+  render(<SushiCard sushi={mockSushi} />)
+  expect(screen.getByText(/description text/i)).toBeInTheDocument();
+});
