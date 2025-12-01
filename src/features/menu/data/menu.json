@@ -1,0 +1,192 @@
+{
+  "categories": [
+    {
+      "name": "Pacú",
+      "items": [
+        {
+          "name": "Roll the Pacú",
+          "ingredients": [
+            "Pacú",
+            "queso crema saborizado",
+            "alga nori",
+            "rebozado"
+          ],
+          "is_fried": true,
+          "price": 5300,
+          "image": "/images/rolls/pacu.jpg",
+          "pieces": 5
+        }
+      ]
+    },
+    {
+      "name": "Langostinos",
+      "items": [
+        {
+          "name": "Clásico de Langostinos",
+          "ingredients": [
+            "Langostinos",
+            "queso crema saborizado",
+            "palta",
+            "alga nori"
+          ],
+          "is_fried": false,
+          "price": 5400,
+          "image": "/images/rolls/langostino.jpg"
+          "pieces": 5
+
+        },
+        {
+          "name": "Langostinos al Pimentón",
+          "ingredients": [
+            "Langostinos salteados con pimentón",
+            "queso crema saborizado",
+            "palta",
+            "alga nori",
+            "rebozado"
+          ],
+          "is_fried": true,
+          "price": 5400,
+          "image": "/images/rolls/langostinos-pimenton.jpg"
+          "pieces": 5
+
+        },
+        {
+          "name": "Langostinos rebozados",
+          "ingredients": [
+            "Langostinos", 
+            "rebozado"
+          ],
+          "is_fried": true,
+          "price": 1500,
+          "image": "/images/rolls/langostinos-rebozados.jpg",
+          "pieces": 1
+        },
+        {
+          "name": "Nigiri de langostino",
+          "ingredients": [
+            "Langostino",
+            "perla de arroz",
+            "mix de semilas de sesamo"
+          ],
+          "is_fried": false,
+          "price": 1600,
+          "image": "/images/rolls/nigiri-langostinos.jpg",
+          "pieces": 1
+        }
+      ]
+    },
+    {
+      "name": "Salmón",
+      "items": [
+        {
+          "name": "Clásico de Salmón",
+          "ingredients": [
+            "Salmon",
+            "queso crema saborizado",
+            "palta",
+            "alga nori",
+            "mix de semillas de sesamo"
+          ],
+          "is_fried": false,
+          "price": 5700,
+          "image": "/images/salmon-crudo.jpg",
+          "pieces": 5
+        },
+        {
+          "name": "Salmón cocido",
+          "ingredients": [
+            "Salmon cocido con miel y mostaza",
+            "queso crema saborizado",
+            "alga nori",
+            "mix de semillas de sesamo"
+          ],
+          "is_fried": false,
+          "price": 5700,
+          "image": "/images/salmon-cocido.jpg",
+          "pieces": 5
+        },
+        {
+          "name": "Nigiri de Salmón",
+          "ingredients": [
+            "Salmon",
+            "perla de arroz",
+            "mix de semillas de sesamo"
+          ],
+          "is_fried": false,
+          "price": 1700,
+          "image": "/images/nigiri-salmon.jpg",
+          "pieces": 1
+        }
+      ]
+    },
+    {
+      "name": "Kanikama",
+      "items": [
+        {
+          "name": "Kanikama",
+          "ingredients": [
+            "Kanikama",
+            "queso crema saborizado",
+            "palta",
+            "alga nori",
+            "mix de semillas de sesamo"
+          ],
+          "is_fried": false,
+          "price": 5200,
+          "image": "/images/kanikama.jpg",
+          "pieces": 5
+        }
+      ]
+    },
+    {
+      "name": "Pickles",
+      "items": [
+        {
+          "name": "Pickes",
+          "ingredients": [
+            "Pickes", 
+            "queso crema saborizado", 
+            "alga nori"
+          ],
+          "is_fried": false,
+          "price": 4900,
+          "image": "/images/pickes.jpg",
+          "pieces": 5
+        }
+      ]
+    },
+    {
+      "name": "Atún",
+      "items": [
+        {
+          "name": "Clásico de Atún",
+          "ingredients": [
+            "Lomos de Atún",
+            "queso crema saborizado",
+            "palta",
+            "alga nori",
+            "mix de semillas de sesamo"
+          ],
+          "is_fried": false,
+          "price": 5300,
+          "image": "/images/atun.jpg",
+          "pieces": 5
+        },
+        {
+          "name": "Atún con morrones",
+          "ingredients": [
+            "Lomos de Atún",
+            "morrones asados",
+            "queso crema saborizado",
+            "alga nori",
+            "rebozado"
+          ],
+          "is_fried": true,
+          "price": 5500,
+          "image": "/images/atun-morron.jpg",
+          "pieces": 5
+        }
+      ]
+    }
+  ]
+}
