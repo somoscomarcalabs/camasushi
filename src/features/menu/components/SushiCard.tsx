@@ -19,6 +19,9 @@ export default function SushiCard({ sushi }: SushiProps) {
       <h3>{sushi.name}</h3>
       <p>{sushi.description}</p>
       <span>${sushi.price.toLocaleString('es-AR')}</span>
+      {sushi.is_fried && (
+        <span>Rebozado</span>
+      )}
     </div>
   )
 }
