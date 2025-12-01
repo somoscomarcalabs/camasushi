@@ -23,18 +23,17 @@ describe("Header Component behavior", () => {
   })
 
   describe("Mobile behavior", () => {
-    test("the mobile menu is hidden initially", () => {
-      const mobileNav = screen.getByRole("mobile-menu-behavior", { hidden: true });
-      expect(mobileNav).toHaveClass("translate-x-full");
+    test("Mobile menu is hidden initially", () => {
+      const mobileNavBehavior = screen.getByRole("mobile-menu-behavior", { hidden: true });
+      expect(mobileNavBehavior).toHaveClass("translate-x-full");
     })
+
+    test("Clicking hamburger opens mobile menu", () => {
+      const hamburger = screen.getByTestId("burger-button");
+      const mobileNav = screen.getByTestId("mobile-menu");
+      fireEvent.click(hamburger);
+      expect(mobileNav).toHaveClass("translate-x-0");
+    })
+
   })
-
-})
-
-test("clicking hamburger opens mobile menu", () => {
-  render(<Header />);
-  const hamburger = screen.getByTestId("burger-button");
-  const mobileNav = screen.getByTestId("mobile-menu");
-  fireEvent.click(hamburger);
-  expect(mobileNav).toHaveClass("translate-x-0");
 })
