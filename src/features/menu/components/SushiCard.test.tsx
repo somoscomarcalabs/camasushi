@@ -8,7 +8,7 @@ describe("SushiCard", () => {
     id: 1,
     name: "Roll de Pacú",
     description: "description text",
-    is_fried: false,
+    is_fried: true,
     type: "Roll",
     price: 1000,
     image: '/images/pacu.jpg'
@@ -35,20 +35,11 @@ describe("SushiCard", () => {
     expect(screen.getByText("$1.000")).toBeInTheDocument();
   });
 
-});
+  test("It renders the 'Rebozado' badge when is_fried is true", () => {
+    render(<SushiCard sushi={mockSushi} />);
+    expect(screen.getByText(/rebozado/i)).toBeInTheDocument();
+  });
 
-test("SushiCard renders the 'Rebozado' badge when is_fried is true", () => {
-  const mockSushi = {
-    id: 1,
-    name: "Roll de Pacú",
-    description: "description text",
-    is_fried: true,
-    type: "Roll",
-    price: 1000,
-    image: '/images/pacu.jpg'
-  };
-  render(<SushiCard sushi={mockSushi} />);
-  expect(screen.getByText(/rebozado/i)).toBeInTheDocument();
 });
 
 
