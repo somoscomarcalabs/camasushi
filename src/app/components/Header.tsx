@@ -9,9 +9,8 @@ export default function Header() {
 
   return (
     <header className="fixed z-50 top-0 left-0 right-0 w-full bg-white text-black shadow-sm py-3">
-      <div className="relative w-full flex items-center">
+      < div className="relative w-full flex items-center" >
 
-        {/* LOGO */}
         <div className="pl-0 ml-4 relative h-20 w-25">
           <Image
             src="/logo.png"
@@ -23,7 +22,6 @@ export default function Header() {
           />
         </div>
 
-        {/* NAV Desktop */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
           <Link className="text-lg font-medium hover:text-gray-400 transition-colors" href="/">Home</Link>
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#menu">Menu</Link>
@@ -31,7 +29,6 @@ export default function Header() {
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#contact">Contact</Link>
         </nav>
 
-        {/* --- HAMBURGER ANIMATION --- */}
         <div
           className="md:hidden ml-auto mr-6 z-[60] relative"
           onClick={() => setOpenMenu(!openMenu)}
@@ -43,7 +40,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* NAV Mobile */}
         <div
           className={`fixed top-0 right-0 h-screen w-[70%] max-w-sm bg-white shadow-2xl z-50 transition-transform duration-500 ease-in-out
           ${openMenu ? "translate-x-0" : "translate-x-full"}`}
@@ -55,7 +51,7 @@ export default function Header() {
             <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#contact">Contact</Link>
           </nav>
         </div>
-      </div>
-    </header>
+      </div >
+    </header >
   );
 }
