@@ -15,4 +15,8 @@ describe("The Header Component...", () => {
     expect(logo).toBeInTheDocument();
   })
 
+  test("...renders the desktop navigation element", () => {
+    render(<Header />);
+    expect(screen.getByTestId('desktop-navigation')).toBeInTheDocument();
+  })
 })

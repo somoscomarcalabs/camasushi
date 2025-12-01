@@ -22,7 +22,7 @@ export default function Header() {
           />
         </div>
 
-        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
+        <nav data-testid="desktop-navigation" className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
           <Link className="text-lg font-medium hover:text-gray-400 transition-colors" href="/">Home</Link>
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#menu">Menu</Link>
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#about">About Us</Link>
