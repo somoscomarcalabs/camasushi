@@ -35,5 +35,13 @@ describe("Header Component behavior", () => {
       expect(mobileNav).toHaveClass("translate-x-0");
     })
 
+    test("Clicking hamburger again closes mobile menu", () => {
+      const hamburgerButton = screen.getByTestId("burger-button");
+      const mobileNav = screen.getByTestId("mobile-menu");
+      fireEvent.click(hamburgerButton);
+      fireEvent.click(hamburgerButton);
+      expect(mobileNav).toHaveClass("translate-x-full");
+    })
+
   })
 })
