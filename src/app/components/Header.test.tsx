@@ -3,13 +3,13 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import Header from './Header';
 
 
-describe("Header Component behavior", () => {
+describe("Header Component", () => {
 
   beforeEach(() => {
     render(<Header />);
   })
 
-  test('It renders correctly', () => {
+  test('It renders without crashing', () => {
     expect(() => render(<Header />)).not.toThrow();
   })
 
@@ -22,39 +22,36 @@ describe("Header Component behavior", () => {
     expect(screen.getByTestId('desktop-navigation')).toBeInTheDocument();
   })
 
-  describe("Mobile behavior", () => {
-    test("Mobile menu is hidden initially", () => {
+  describe("Mobile menu behavior", () => {
+    test("Is hidden initially", () => {
       const mobileNavBehavior = screen.getByRole("mobile-menu-behavior", { hidden: true });
       expect(mobileNavBehavior).toHaveClass("translate-x-full");
     })
 
     test("Clicking hamburger opens mobile menu", () => {
-      const hamburgerButton = screen.getByTestId("burger-button");
+      const toggle = screen.getByTestId("burger-button");
       const mobileNav = screen.getByTestId("mobile-menu");
-      fireEvent.click(hamburgerButton);
+      fireEvent.click(toggle);
       expect(mobileNav).toHaveClass("translate-x-0");
     })
 
     test("Clicking hamburger again closes mobile menu", () => {
-      const hamburgerButton = screen.getByTestId("burger-button");
+      const toggle = screen.getByTestId("burger-button");
       const mobileNav = screen.getByTestId("mobile-menu");
-      fireEvent.click(hamburgerButton);
-      fireEvent.click(hamburgerButton);
+      fireEvent.click(toggle);
+      fireEvent.click(toggle);
       expect(mobileNav).toHaveClass("translate-x-full");
     })
 
+    test("Clicking a mobile link closes the menu", () => {
+      const toggle = screen.getByTestId("burger-button");
+      const mobileMenu = screen.getByTestId("mobile-menu");
+
+      fireEvent.click(toggle);
+      const mobileLinks = within(mobileMenu).getAllByRole("link");
+      fireEvent.click(mobileLinks[0]);
+
+      expect(mobileMenu).toHaveClass("translate-x-full");
+    })
   })
-})
-
-test("Clicking a mobile link closes the menu", () => {
-  render(<Header />);
-
-  const hamburgerButton = screen.getByTestId("burger-button");
-  const mobileMenu = screen.getByTestId("mobile-menu");
-
-  fireEvent.click(hamburgerButton);
-  const mobileLinks = within(mobileMenu).getAllByRole("link");
-  fireEvent.click(mobileLinks[0]);
-
-  expect(mobileMenu).toHaveClass("translate-x-full");
 })
