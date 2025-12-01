@@ -32,6 +32,20 @@ describe("SushiCard", () => {
 
 });
 
+test("SushiCard renders the sushi price formatted correctly", () => {
+  const mockSushi = {
+    id: 1,
+    name: "Roll de Pacú",
+    description: "description text",
+    is_fried: false,
+    type: "Roll",
+    price: 1000,
+    image: '/images/pacu.jpg'
+  };
+
+  render(<SushiCard sushi={mockSushi} />);
+  expect(screen.getByText("$1.000")).toBeInTheDocument();
+})
 
 
 
