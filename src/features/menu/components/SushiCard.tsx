@@ -13,6 +13,7 @@ export default function SushiCard({ sushi }: SushiProps) {
   return (
     <div>
       <h3>{sushi.name}</h3>
+      <p>{sushi.description}</p>
     </div>
   )
 }
