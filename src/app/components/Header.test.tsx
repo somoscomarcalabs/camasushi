@@ -22,3 +22,9 @@ describe("The Header Component...", () => {
     expect(screen.getByTestId('desktop-navigation')).toBeInTheDocument();
   })
 })
+
+test("the mobile menu is hidden initially", () => {
+  render(<Header />);
+  const mobileNav = screen.getByRole("mobile-menu-behavior", { hidden: true });
+  expect(mobileNav).toHaveClass("translate-x-full");
+})

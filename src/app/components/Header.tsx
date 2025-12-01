@@ -29,10 +29,7 @@ export default function Header() {
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#contact">Contact</Link>
         </nav>
 
-        <div
-          className="md:hidden ml-auto mr-6 z-[60] relative"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
+        <div className="md:hidden ml-auto mr-6 z-[60] relative" onClick={() => setOpenMenu(!openMenu)} >
           <div id="burger" className={openMenu ? "open" : ""}>
             <div></div>
             <div></div>
@@ -41,6 +38,7 @@ export default function Header() {
         </div>
 
         <div
+          role="mobile-menu-behavior"
           className={`fixed top-0 right-0 h-screen w-[70%] max-w-sm bg-white shadow-2xl z-50 transition-transform duration-500 ease-in-out
           ${openMenu ? "translate-x-0" : "translate-x-full"}`}
         >
