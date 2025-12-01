@@ -1,5 +1,5 @@
 import { test, expect, describe, beforeEach } from 'vitest';
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import Header from './Header';
 
 
@@ -44,4 +44,17 @@ describe("Header Component behavior", () => {
     })
 
   })
+})
+
+test("Clicking a mobile link closes the menu", () => {
+  render(<Header />);
+
+  const hamburgerButton = screen.getByTestId("burger-button");
+  const mobileMenu = screen.getByTestId("mobile-menu");
+
+  fireEvent.click(hamburgerButton);
+  const mobileLinks = within(mobileMenu).getAllByRole("link");
+  fireEvent.click(mobileLinks[0]);
+
+  expect(mobileMenu).toHaveClass("translate-x-full");
 })
