@@ -3,28 +3,32 @@ import { render, screen } from '@testing-library/react'
 import Header from './Header';
 
 
-describe("The Header Component...", () => {
+describe("Header Component behavior", () => {
 
   beforeEach(() => {
     render(<Header />);
   })
 
-  test('...renders correctly', () => {
+  test('It renders correctly', () => {
     expect(() => render(<Header />)).not.toThrow();
   })
 
-  test("...renders the logo", () => {
+  test("It renders the logo", () => {
     const logo = screen.getByAltText("Logo");
     expect(logo).toBeInTheDocument();
   })
 
-  test("...renders the desktop navigation element", () => {
+  test("It renders the desktop navigation element", () => {
     expect(screen.getByTestId('desktop-navigation')).toBeInTheDocument();
   })
+
+  describe("Mobile behavior", () => {
+    test("the mobile menu is hidden initially", () => {
+      const mobileNav = screen.getByRole("mobile-menu-behavior", { hidden: true });
+      expect(mobileNav).toHaveClass("translate-x-full");
+    })
+  })
+
 })
 
-test("the mobile menu is hidden initially", () => {
-  render(<Header />);
-  const mobileNav = screen.getByRole("mobile-menu-behavior", { hidden: true });
-  expect(mobileNav).toHaveClass("translate-x-full");
-})
+
