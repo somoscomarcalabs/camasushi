@@ -2,7 +2,6 @@ import { test, expect, describe, beforeEach } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react'
 import Header from './Header';
 
-
 describe("Header Component", () => {
 
   beforeEach(() => {
@@ -50,7 +49,6 @@ describe("Header Component", () => {
       fireEvent.click(toggle);
       const mobileLinks = within(mobileMenu).getAllByRole("link");
       fireEvent.click(mobileLinks[0]);
-
       expect(mobileMenu).toHaveClass("translate-x-full");
     })
   })

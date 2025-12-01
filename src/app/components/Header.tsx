@@ -4,13 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
-
   const [openMenu, setOpenMenu] = useState(false);
-
   return (
     <header className="fixed z-50 top-0 left-0 right-0 w-full bg-white text-black shadow-sm py-3">
       < div className="relative w-full flex items-center" >
-
 
         {/* LOGO */}
         <div className="pl-0 ml-4 relative h-20 w-25">
