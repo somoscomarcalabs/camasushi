@@ -89,7 +89,7 @@
           ],
           "is_fried": false,
           "price": 5700,
-          "image": "/images/salmon-crudo.jpg",
+          "image": "/images/rolls/salmon-crudo.jpg",
           "pieces": 5
         },
         {
@@ -102,7 +102,7 @@
           ],
           "is_fried": false,
           "price": 5700,
-          "image": "/images/salmon-cocido.jpg",
+          "image": "/images/rolls/salmon-cocido.jpg",
           "pieces": 5
         },
         {
@@ -114,7 +114,7 @@
           ],
           "is_fried": false,
           "price": 1700,
-          "image": "/images/nigiri-salmon.jpg",
+          "image": "/images/rolls/nigiri-salmon.jpg",
           "pieces": 1
         }
       ]
@@ -133,7 +133,7 @@
           ],
           "is_fried": false,
           "price": 5200,
-          "image": "/images/kanikama.jpg",
+          "image": "/images/rolls/kanikama.jpg",
           "pieces": 5
         }
       ]
@@ -150,7 +150,7 @@
           ],
           "is_fried": false,
           "price": 4900,
-          "image": "/images/pickes.jpg",
+          "image": "/images/rolls/pickes.jpg",
           "pieces": 5
         }
       ]
@@ -169,7 +169,7 @@
           ],
           "is_fried": false,
           "price": 5300,
-          "image": "/images/atun.jpg",
+          "image": "/images/rolls/atun.jpg",
           "pieces": 5
         },
         {
@@ -183,7 +183,7 @@
           ],
           "is_fried": true,
           "price": 5500,
-          "image": "/images/atun-morron.jpg",
+          "image": "/images/rolls/atun-morron.jpg",
           "pieces": 5
         }
       ]
