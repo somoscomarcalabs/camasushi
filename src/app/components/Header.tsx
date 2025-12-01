@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Header() {
 
@@ -11,6 +11,8 @@ export default function Header() {
     <header className="fixed z-50 top-0 left-0 right-0 w-full bg-white text-black shadow-sm py-3">
       < div className="relative w-full flex items-center" >
 
+
+        {/* LOGO */}
         <div className="pl-0 ml-4 relative h-20 w-25">
           <Image
             src="/logo.png"
@@ -22,6 +24,7 @@ export default function Header() {
           />
         </div>
 
+        {/* NAV Desktop */}
         <nav data-testid="desktop-navigation" className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
           <Link className="text-lg font-medium hover:text-gray-400 transition-colors" href="/">Home</Link>
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#menu">Menu</Link>
@@ -29,6 +32,7 @@ export default function Header() {
           <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#contact">Contact</Link>
         </nav>
 
+        {/* HAMBURGER ANIMATION */}
         <div
           data-testid="burger-button"
           className="md:hidden ml-auto mr-6 z-[60] relative"
@@ -40,6 +44,7 @@ export default function Header() {
           </div>
         </div>
 
+        {/* NAV Mobile */}
         <div
           data-testid="mobile-menu"
           role="mobile-menu-behavior"
