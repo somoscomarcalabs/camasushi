@@ -30,22 +30,13 @@ describe("SushiCard", () => {
     expect(screen.getByRole('img', { name: new RegExp(/roll de pacú/i) })).toBeInTheDocument();
   });
 
+  test("It renders the sushi price formatted correctly", () => {
+    render(<SushiCard sushi={mockSushi} />);
+    expect(screen.getByText("$1.000")).toBeInTheDocument();
+  });
+
 });
 
-test("SushiCard renders the sushi price formatted correctly", () => {
-  const mockSushi = {
-    id: 1,
-    name: "Roll de Pacú",
-    description: "description text",
-    is_fried: false,
-    type: "Roll",
-    price: 1000,
-    image: '/images/pacu.jpg'
-  };
-
-  render(<SushiCard sushi={mockSushi} />);
-  expect(screen.getByText("$1.000")).toBeInTheDocument();
-})
 
 
 
