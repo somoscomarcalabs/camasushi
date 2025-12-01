@@ -29,9 +29,9 @@ describe("Header Component behavior", () => {
     })
 
     test("Clicking hamburger opens mobile menu", () => {
-      const hamburger = screen.getByTestId("burger-button");
+      const hamburgerButton = screen.getByTestId("burger-button");
       const mobileNav = screen.getByTestId("mobile-menu");
-      fireEvent.click(hamburger);
+      fireEvent.click(hamburgerButton);
       expect(mobileNav).toHaveClass("translate-x-0");
     })
 
