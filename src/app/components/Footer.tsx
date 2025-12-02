@@ -14,7 +14,16 @@ export default function Footer() {
                   alt="CamaSushi Logo"
                   width={100}
                   height={30}
-                  className="h-auto -my-1"
+                  className="h-auto -my-1 block dark:hidden"
+                  priority={false}
+                />
+                {/* Logo para dark mode */}
+                <Image
+                  src="/images/ui/camasushi-footer-dark.png"
+                  alt="CamaSushi Logo"
+                  width={100}
+                  height={30}
+                  className="h-auto -my-1 hidden dark:block"
                   priority={false}
                 />
               </div>
