@@ -21,3 +21,8 @@ describe("Hero", () => {
 
 });
 
+test("hero renders the call-to-action link pointing to the menu", () => {
+  render(<Hero />);
+  expect(screen.getByRole('link', { name: /mirá nuestro menú/i })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /mirá nuestro menú/i })).toHaveAttribute('href', '#menu')
+});
