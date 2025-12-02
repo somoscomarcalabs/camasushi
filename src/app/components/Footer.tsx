@@ -81,7 +81,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-4 border-t border-muted pt-4 text-center text-sm text-muted-foreground font-bold">
-          <p>© 2025 CamaSushi. All Rights Reserved.</p>
+          <p>© 2025 CamaSushi. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
