@@ -29,4 +29,7 @@ describe("Hero", () => {
 
 });
 
-
+test("hero renders the hero image with accessible text", () => {
+  render(<Hero />);
+  expect(screen.getByRole('img', { name: /camasushi-logo/i })).toBeInTheDocument()
+})
