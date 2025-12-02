@@ -18,8 +18,9 @@ export default function Footer() {
                   priority={false}
                 />
               </div>
-              <p className="text-sm text-muted-foreground mt-[-0.25rem]">123 Sushi Lane, Puerto Rico, Misiones</p>
-              <p className="text-sm text-muted-foreground">3743 417060 / 502117</p>
+              <p className="text-sm text-muted-foreground mt-[-0.25rem]">Dirección: Calle Estrada 206, esq. Córdoba, Puerto Rico, Misiones</p>
+              <p className="text-sm text-muted-foreground mt-[-0.25rem]">Viernes y Sábados - Pedidos con anticipación</p>
+              <p className="text-sm text-muted-foreground">Teléfono: 3743 417060 / 502117</p>
             </div>
           </div>
           <div className="flex gap-4 items-center">
