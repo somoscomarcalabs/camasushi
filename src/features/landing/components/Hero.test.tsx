@@ -14,9 +14,10 @@ describe("Hero", () => {
     expect(screen.getByRole('heading', { level: 1, name: /sushi/i })).toBeInTheDocument()
   });
 
-})
+  test("Renders the description paragraph", () => {
+    render(<Hero />);
+    expect(screen.getByText(/ingredientes frescos/i)).toBeInTheDocument();
+  });
 
-test("hero renders the description paragraph", () => {
-  render(<Hero />);
-  expect(screen.getByText(/ingredientes frescos/i)).toBeInTheDocument();
 });
+
