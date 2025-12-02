@@ -1,16 +1,41 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section data-testid="hero-section" className="container mx-auto px-4 py-12 text-center text-secondary">
-      <div>
-        <h1 className="text-4xl md:text-6xl mb-2">El mejor Sushi de Puerto Rico</h1>
-        <p className="uppercase mb-4">Sushi hecho a mano con ingredientes frescos.</p>
-        <a href="#menu" className="inline-block uppercase bg-accent text-white font-bold py-3 px-8 rounded-full hover: transition duration-300">Mirá nuestro Menú</a>
+    <section
+      data-testid="hero-section"
+      className="relative flex flex-col md:flex-row  gap-x-20 min-h-screen bg-primary dark:bg-secondary flex flex-col items-center justify-center px-4 text-center"
+    >
+      <div className="relative w-48 h-48 md:w-150 md:h-150 md:mt-20 mt-30 mb-8 items-center">
+        <Image
+          src="/images/ui/logo-vector.webp"
+          alt="camasushi-logo"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
-      <div>
-        <Image src="/images/ui/LogoCama_Sushi.webp" width={300} height={200} alt="camasushi-logo" className="" />
+
+      <div className="max-w-2xl text-foreground dark:text-primary uppercase md:mt-20">
+        <div className="text-4xl md:text-6xl font-bold">
+          <h1>
+            El mejor Sushi
+          </h1>
+          <h1 className='text-background'>
+            de puerto rico
+          </h1>
+        </div>
+        <div>
+          <a
+            href="#menu"
+            className="inline-block bg-white text-foreground font-bold py-4 px-15 rounded-2xl hover:bg-gray-100 transition duration-300 shadow-lg md:text-4xl text-lg md:mt-10 mt-5 mb-4 font-clash"
+          >
+            Mirá nuestro Menú
+          </a>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default Hero;

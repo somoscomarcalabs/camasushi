@@ -14,11 +14,6 @@ describe("Hero", () => {
     expect(screen.getByRole('heading', { level: 1, name: /sushi/i })).toBeInTheDocument()
   });
 
-  test("Renders the description paragraph", () => {
-    render(<Hero />);
-    expect(screen.getByText(/ingredientes frescos/i)).toBeInTheDocument();
-  });
-
   test("Renders the call-to-action link pointing to the menu", () => {
     render(<Hero />);
     const linkElement = screen.getByRole('link', { name: /mirá nuestro menú/i });
@@ -27,9 +22,8 @@ describe("Hero", () => {
     expect(linkElement).toHaveAttribute('href', '#menu')
   });
 
+  test("hero renders the hero image with accessible text", () => {
+    render(<Hero />);
+    expect(screen.getByRole('img', { name: /camasushi-logo/i })).toBeInTheDocument()
+  });
 });
-
-test("hero renders the hero image with accessible text", () => {
-  render(<Hero />);
-  expect(screen.getByRole('img', { name: /camasushi-logo/i })).toBeInTheDocument()
-})
