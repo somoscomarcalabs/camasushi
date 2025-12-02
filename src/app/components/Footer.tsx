@@ -6,9 +6,11 @@ export default function Footer() {
     <footer className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
       <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <div className="text-center sm:text-left flex items-center sm:items-start">
-            <div className="flex flex-col">
+          {/* Contenedor del logo e información - Centrado en móvil, alineado a la izquierda en desktop */}
+          <div className="text-center sm:text-left w-full sm:w-auto flex flex-col items-center sm:items-start">
+            <div className="flex flex-col items-center sm:items-start">
               <div className="mb-[-0.5rem]">
+                {/* Logo para light mode */}
                 <Image
                   src="/images/ui/camasushi-footer-light.png"
                   alt="CamaSushi Logo"
@@ -27,12 +29,16 @@ export default function Footer() {
                   priority={false}
                 />
               </div>
-              <p className="text-sm text-muted-foreground mt-[-0.25rem]">Dirección: Calle Estrada 206, esq. Córdoba, Puerto Rico, Misiones</p>
-              <p className="text-sm text-muted-foreground mt-[-0.25rem]">Viernes y Sábados - Pedidos con anticipación</p>
-              <p className="text-sm text-muted-foreground">Teléfono: 3743 417060 / 502117</p>
+              <p className="text-sm text-muted-foreground mt-[-0.25rem] text-center sm:text-left">Calle Estrada 206, esquina Córdoba</p>
+              <p className="text-sm text-muted-foreground mt-[-0.25rem] text-center sm:text-left">Puerto Rico, Misiones</p>
+              <p className="text-sm text-muted-foreground mt-[-0.25rem] text-center sm:text-left">Viernes y Sábados</p>
+              <p className="text-sm text-muted-foreground mt-[-0.25rem] text-center sm:text-left">Pedidos con anticipación</p>
+              <p className="text-sm text-muted-foreground text-center sm:text-left font-bold">3743 417060 / 3743 502117</p>
             </div>
           </div>
-          <div className="flex gap-4 items-center">
+
+          {/* Íconos de redes sociales - Centrados en móvil, a la derecha en desktop */}
+          <div className="flex gap-4 items-center justify-center sm:justify-start">
             <a
               className="text-muted-foreground transition-colors hover:text-primary"
               data-alt="WhatsApp icon"
@@ -50,12 +56,12 @@ export default function Footer() {
               aria-label="Instagram"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85 0 3.204-.011 3.584-.069 4.85-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85 0-3.204.011-3.584.069-4.85.148-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.644-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.667.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.667-.014 4.947-.072 4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z" />
+                <path d="M12 0C8.74 0 8.333.015 7.053.072 2.695.272.273 2.69.073 7.052.015 8.333 0 8.74 0 12c0 3.26.015 3.668.072 4.948.2 4.258 2.618 6.68 6.98 6.98C8.333 23.985 8.74 24 12 24c3.26 0 3.668-.015 4.948-.072 4.26-.2 6.78-2.618 6.98-6.98C23.985 15.668 24 15.26 24 12c0-3.26-.015-3.667-.072-4.947-.2-4.258-2.618-6.68-6.98-6.98C15.668.015 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 3.252.148 4.771 1.691 4.919 4.919.055 1.265.07 1.645.07 4.85 0 3.204-.015 3.584-.07 4.85-.149 3.225-1.664 4.771-4.919 4.919-1.266.055-1.645.07-4.85.07-3.204 0-3.584-.015-4.85-.07-3.225-.149-4.771-1.664-4.919-4.919-.055-1.266-.07-1.645-.07-4.85 0-3.204.015-3.584.07-4.85.149-3.225 1.664-4.771 4.919-4.919C8.416 2.176 8.796 2.16 12 2.16zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
               </svg>
             </a>
           </div>
         </div>
-        <div className="mt-4 border-t border-muted pt-4 text-center text-sm text-muted-foreground">
+        <div className="mt-4 border-t border-muted pt-4 text-center text-sm text-muted-foreground font-bold">
           <p>© 2025 CamaSushi. All Rights Reserved.</p>
         </div>
       </div>
