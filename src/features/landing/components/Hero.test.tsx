@@ -19,10 +19,14 @@ describe("Hero", () => {
     expect(screen.getByText(/ingredientes frescos/i)).toBeInTheDocument();
   });
 
+  test("Renders the call-to-action link pointing to the menu", () => {
+    render(<Hero />);
+    const linkElement = screen.getByRole('link', { name: /mirá nuestro menú/i });
+
+    expect(linkElement).toBeInTheDocument();
+    expect(linkElement).toHaveAttribute('href', '#menu')
+  });
+
 });
 
-test("hero renders the call-to-action link pointing to the menu", () => {
-  render(<Hero />);
-  expect(screen.getByRole('link', { name: /mirá nuestro menú/i })).toBeInTheDocument();
-  expect(screen.getByRole('link', { name: /mirá nuestro menú/i })).toHaveAttribute('href', '#menu')
-});
+
