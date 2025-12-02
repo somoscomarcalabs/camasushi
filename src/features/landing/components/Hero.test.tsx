@@ -16,3 +16,7 @@ describe("Hero", () => {
 
 })
 
+test("hero renders the description paragraph", () => {
+  render(<Hero />);
+  expect(screen.getByText(/ingredientes frescos/i)).toBeInTheDocument();
+});
