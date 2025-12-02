@@ -10,6 +10,11 @@ export default function Footer() {
   // URL de WhatsApp
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
 
+  // Usuario de Instagram
+  const instagramUsername = "camasushi";
+  // Construir la URL de Instagram
+  const instagramUrl = `https://instagram.com/${instagramUsername}`;
+
   return (
     <footer className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
       <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8">
@@ -63,8 +68,11 @@ export default function Footer() {
             <a
               className="text-muted-foreground transition-colors hover:text-primary"
               data-alt="Instagram icon"
-              href="#"
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
+              title="Seguir en Instagram"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0C8.74 0 8.333.015 7.053.072 2.695.272.273 2.69.073 7.052.015 8.333 0 8.74 0 12c0 3.26.015 3.668.072 4.948.2 4.258 2.618 6.68 6.98 6.98C8.333 23.985 8.74 24 12 24c3.26 0 3.668-.015 4.948-.072 4.26-.2 6.78-2.618 6.98-6.98C23.985 15.668 24 15.26 24 12c0-3.26-.015-3.667-.072-4.947-.2-4.258-2.618-6.68-6.98-6.98C15.668.015 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 3.252.148 4.771 1.691 4.919 4.919.055 1.265.07 1.645.07 4.85 0 3.204-.015 3.584-.07 4.85-.149 3.225-1.664 4.771-4.919 4.919-1.266.055-1.645.07-4.85.07-3.204 0-3.584-.015-4.85-.07-3.225-.149-4.771-1.664-4.919-4.919-.055-1.266-.07-1.645-.07-4.85 0-3.204.015-3.584.07-4.85.149-3.225 1.664-4.771 4.919-4.919C8.416 2.176 8.796 2.16 12 2.16zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
