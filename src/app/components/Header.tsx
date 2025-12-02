@@ -22,11 +22,11 @@ export default function Header() {
         </div>
 
         {/* NAV Desktop */}
-        <nav data-testid="desktop-navigation" className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
-          <Link className="text-lg font-medium hover:text-gray-400 transition-colors" href="/">Home</Link>
-          <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#menu">Menu</Link>
-          <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#about">About Us</Link>
-          <Link className="text-md font-medium hover:text-gray-400 transition-colors" href="#contact">Contact</Link>
+        <nav data-testid="desktop-navigation" className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 font-satoshi text-lg font-medium">
+          <Link className="hover:text-gray-400" href="/">Home</Link>
+          <Link className="hover:text-gray-400" href="#menu">Menu</Link>
+          <Link className="hover:text-gray-400" href="#about">About Us</Link>
+          <Link className="hover:text-gray-400" href="#contact">Contact</Link>
         </nav>
 
         {/* HAMBURGER ANIMATION */}
@@ -48,11 +48,11 @@ export default function Header() {
           className={`fixed top-0 right-0 h-screen w-[70%] max-w-sm bg-white shadow-2xl z-50 transition-transform duration-500 ease-in-out
           ${openMenu ? "translate-x-0" : "translate-x-full"}`}
         >
-          <nav className="flex flex-col items-start gap-6 px-8 pt-32 h-full">
-            <Link onClick={() => setOpenMenu(false)} className="text-lg font-medium" href="/">Home</Link>
-            <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#menu">Menu</Link>
-            <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#about">About Us</Link>
-            <Link onClick={() => setOpenMenu(false)} className="text-md font-medium" href="#contact">Contact</Link>
+          <nav className="flex flex-col items-start gap-6 px-8 pt-32 h-full text-lg">
+            <Link onClick={() => setOpenMenu(false)} className="font-medium" href="/">Home</Link>
+            <Link onClick={() => setOpenMenu(false)} className="font-medium" href="#menu">Menu</Link>
+            <Link onClick={() => setOpenMenu(false)} className="font-medium" href="#about">About Us</Link>
+            <Link onClick={() => setOpenMenu(false)} className="font-medium" href="#contact">Contact</Link>
           </nav>
         </div>
       </div >
