@@ -16,7 +16,7 @@ export default function Footer() {
   const instagramUrl = `https://instagram.com/${instagramUsername}`;
 
   return (
-    <footer className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
+    <footer id="contact" className="iw-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
       <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           {/* Contenedor del logo e información - Centrado en móvil, alineado a la izquierda en desktop */}
