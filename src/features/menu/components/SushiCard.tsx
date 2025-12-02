@@ -14,7 +14,7 @@ interface SushiProps {
 
 export default function SushiCard({ sushi }: SushiProps) {
   return (
-    <div className='w-full max-w-sm rounded-2xl overflow-hidden shadow-lg'>
+    <div className='w-full max-w-sm rounded-2xl overflow-hidden shadow-lg text-foreground dark:text-muted dark:bg-accent'>
       <div className='relative h-48 w-full'>
         <Image src={sushi.image} alt={sushi.name} fill className='object-cover' />
         {sushi.is_fried && (
@@ -22,7 +22,7 @@ export default function SushiCard({ sushi }: SushiProps) {
         )}
       </div>
       <div className="p-5">
-        <h3 className="text-xl font-bold mb-2">{sushi.name}</h3>
+        <h3 className="text-xl mb-2">{sushi.name}</h3>
         <p className="text-sm mb-6 leading-relaxed">{sushi.ingredients.join(', ')}</p>
         <div className="flex items-center justify-between">
           <span>${sushi.price.toLocaleString('es-AR')}</span>
