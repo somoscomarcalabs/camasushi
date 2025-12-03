@@ -13,11 +13,22 @@ export default function Header() {
         {/* LOGO */}
         <div className="pl-0 ml-4 relative h-20 w-25">
           <Image
-            src="/images/ui/logo.png"
+            src="/images/ui/pez-footer-light.png"
             alt="Logo"
             fill
             sizes="(max-width: 768px) 100px, 150px"
-            className="object-cover rounded-full"
+            className="h-auto block dark:hidden"
+            priority={false}
+            loading="eager"
+          />
+
+          <Image
+            src="/images/ui/pez-footer-dark.png"
+            alt="LogoDark"
+            fill
+            sizes="(max-width: 768px) 100px, 150px"
+            className="h-auto hidden dark:block"
+            priority={false}
             loading="eager"
           />
         </div>
