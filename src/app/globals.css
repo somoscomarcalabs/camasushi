@@ -125,6 +125,7 @@ h3 {
     /* Start invisible so it doesn't flash before delay */
     opacity: 0;
   }
+}
 
 html {
   scroll-behavior: smooth;

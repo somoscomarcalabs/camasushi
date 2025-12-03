@@ -19,10 +19,8 @@ const Hero = () => {
       <div data-testid="hero-text-container" className="max-w-2xl text-foreground dark:text-primary uppercase md:mt-20 animate-slide-in-right" style={{ animationDelay: '200ms' }}>
         <div className="text-4xl md:text-6xl font-bold">
           <h1>
-            El mejor Sushi
-          </h1>
-          <h1 className='text-background'>
-            de puerto rico
+            El mejor Sushi <br />
+            <span className='text-background'>de puerto rico</span>
           </h1>
         </div>
         <div>
