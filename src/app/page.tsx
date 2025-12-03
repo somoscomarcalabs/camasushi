@@ -1,7 +1,10 @@
+import Hero from "@/features/landing/components/Hero";
+
 export default function Home() {
   return (
     <div>
       <main>
+        <Hero />
       </main >
     </div >
   );
