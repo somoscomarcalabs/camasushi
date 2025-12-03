@@ -1,5 +1,5 @@
 import { test, expect, describe } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import SushiCard from '@/features/menu/components/SushiCard';
 
 describe("SushiCard", () => {
@@ -8,6 +8,7 @@ describe("SushiCard", () => {
     id: 1,
     name: "Roll de Pacú",
     ingredients: ["ingredient-1", "ingredient-2"],
+    description: "description",
     is_fried: true,
     price: 1000,
     image: '/images/pacu.jpg',
@@ -18,6 +19,13 @@ describe("SushiCard", () => {
     render(<SushiCard sushi={mockSushi} />)
     expect(screen.getByText(/roll de pacú/i)).toBeInTheDocument();
   });
+
+  test("It renders the sushi description", () => {
+    render(<SushiCard sushi={mockSushi} />);
+    const container = screen.getByTestId("sushi-description");
+    expect(container).toBeInTheDocument();
+    expect(within(container).getByText("description")).not.toThrow()
+  })
 
   test("It renders the sushi ingredients", () => {
     render(<SushiCard sushi={mockSushi} />)
