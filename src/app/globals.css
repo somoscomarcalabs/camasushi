@@ -111,7 +111,6 @@ html {
 #burger > div {
   height: 2px;
   width: 100%;
-  background-color: #000;
   transition: 0.5s;
   border-radius: 9999px;
 }
