@@ -54,7 +54,7 @@ describe("Footer Component", () => {
   test("It renders the light mode logo", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const lightLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("pez-footer-light.png")
+      logo.getAttribute("src")?.includes("pez-light.png")
     );
     expect(lightLogo).toBeInTheDocument();
   });
@@ -62,7 +62,7 @@ describe("Footer Component", () => {
   test("It renders the dark mode logo", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const darkLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("pez-footer-dark.png")
+      logo.getAttribute("src")?.includes("pez-dark.png")
     );
     expect(darkLogo).toBeInTheDocument();
   });
@@ -70,7 +70,7 @@ describe("Footer Component", () => {
   test("Light mode logo has correct CSS classes", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const lightLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("pez-footer-light.png")
+      logo.getAttribute("src")?.includes("pez-light.png")
     );
     expect(lightLogo).toHaveClass("block", "dark:hidden");
   });
@@ -78,7 +78,7 @@ describe("Footer Component", () => {
   test("Dark mode logo has correct CSS classes", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const darkLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("pez-footer-dark.png")
+      logo.getAttribute("src")?.includes("pez-dark.png")
     );
     expect(darkLogo).toHaveClass("hidden", "dark:block");
   });

@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex flex-col items-center sm:items-start -mt-2 sm:mt-0">
               {/* Logo para light mode */}
               <Image
-                src="/images/ui/pez-footer-light.png"
+                src="/images/ui/pez-light.png"
                 alt="CamaSushi Logo"
                 width={100}
                 height={30}
@@ -22,7 +22,7 @@ export default function Footer() {
               />
               {/* Logo para dark mode */}
               <Image
-                src="/images/ui/pez-footer-dark.png"
+                src="/images/ui/pez-dark.png"
                 alt="CamaSushi Logo"
                 width={100}
                 height={30}
