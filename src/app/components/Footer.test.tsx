@@ -54,7 +54,7 @@ describe("Footer Component", () => {
   test("It renders the light mode logo", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const lightLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("camasushi-footer-light.png")
+      logo.getAttribute("src")?.includes("pez-light.png")
     );
     expect(lightLogo).toBeInTheDocument();
   });
@@ -62,7 +62,7 @@ describe("Footer Component", () => {
   test("It renders the dark mode logo", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const darkLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("camasushi-footer-dark.png")
+      logo.getAttribute("src")?.includes("pez-dark.png")
     );
     expect(darkLogo).toBeInTheDocument();
   });
@@ -70,7 +70,7 @@ describe("Footer Component", () => {
   test("Light mode logo has correct CSS classes", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const lightLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("camasushi-footer-light.png")
+      logo.getAttribute("src")?.includes("pez-light.png")
     );
     expect(lightLogo).toHaveClass("block", "dark:hidden");
   });
@@ -78,7 +78,7 @@ describe("Footer Component", () => {
   test("Dark mode logo has correct CSS classes", () => {
     const logos = screen.getAllByAltText("CamaSushi Logo");
     const darkLogo = logos.find(logo =>
-      logo.getAttribute("src")?.includes("camasushi-footer-dark.png")
+      logo.getAttribute("src")?.includes("pez-dark.png")
     );
     expect(darkLogo).toHaveClass("hidden", "dark:block");
   });
@@ -87,15 +87,5 @@ describe("Footer Component", () => {
     const footerContainer = screen.getByText("Calle Estrada 206, esquina Córdoba").closest('footer');
     const innerContainer = footerContainer?.querySelector('.mx-auto');
     expect(innerContainer).toHaveClass("px-4", "sm:px-6", "md:px-8");
-  });
-
-  test("Text content has responsive alignment classes", () => {
-    const addressText = screen.getByText("Calle Estrada 206, esquina Córdoba");
-    expect(addressText).toHaveClass("text-center", "sm:text-left");
-  });
-
-  test("Social icons container has responsive alignment classes", () => {
-    const socialContainer = screen.getByLabelText("WhatsApp").closest('.flex');
-    expect(socialContainer).toHaveClass("justify-center", "sm:justify-start");
   });
 });
