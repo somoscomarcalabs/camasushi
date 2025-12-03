@@ -1,20 +1,9 @@
 'use client';
 import Image from "next/image";
 
+import { whatsappUrl, instagramUrl } from "@/features/contact/contact";
+
 export default function Footer() {
-
-  // Número de teléfono de la empresa (sin espacios, guiones, etc.)
-  const whatsappNumber = "3743417060";
-  // Mensaje predefinido (opcional)
-  const defaultMessage = "Hola, me gustaría hacer un pedido de sushi!";
-  // URL de WhatsApp
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
-
-  // Usuario de Instagram
-  const instagramUsername = "camasushi";
-  // Construir la URL de Instagram
-  const instagramUrl = `https://instagram.com/${instagramUsername}`;
-
   return (
     <footer id="contact" className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
       <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8">
@@ -50,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Íconos de redes sociales - Centrados en móvil, a la derecha en desktop */}
+          {/* Íconos de redes sociales */}
           <div className="flex gap-4 items-center justify-center sm:justify-start">
             <a
               className="text-muted-foreground transition-colors hover:text-primary"
