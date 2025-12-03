@@ -4,18 +4,34 @@
       "name": "Pacú",
       "items": [
         {
-          "name": "Roll the Pacú",
+          "name": "Clásico de Pacú",
           "ingredients": [
             "Pacú",
             "queso crema saborizado",
             "alga nori",
             "rebozado"
           ],
+          "description": "*Una pieza de sushi caliente con un toque local*. Relleno de pacú y queso crema saborizado, rebozado.\nLa perfecta combinacion de un sabor fuerte y un exterior crocante.",
           "is_fried": true,
           "price": 5300,
           "image": "/images/rolls/pacu.jpg",
           "pieces": 5
-        }
+        },
+        {
+          "name": "Pacú y Morrones Asados",
+          "ingredients": [
+            "Pacú",
+            "queso crema saborizado",
+            "morrones asados",
+            "alga nori",
+            "rebozado"
+          ],
+          "description": "*Fusión Litoral Caliente*. Un roll único con tierna carne de pacú (pescado de río).\nBalanceado por el suave queso crema y el toque dulce y ahumado del morrón asado.",
+          "is_fried": true,
+          "price": 5300,
+          "image": "/images/rolls/pacu.jpg",
+          "pieces": 5
+        },
       ]
     },
     {
@@ -29,6 +45,22 @@
             "palta",
             "alga nori"
           ],
+          "description": "*La dupla imbatible de langostino y palta* envuelta en una explosión de queso crema.",
+          "is_fried": false,
+          "price": 5400,
+          "image": "/images/rolls/langostino.jpg"
+          "pieces": 5
+
+        },
+        {
+          "name": "Langostino Golf",
+          "ingredients": [
+            "Langostinos",
+            "salsa golf",
+            "palta",
+            "alga nori"
+          ],
+          "description": "*Sabor tradicional*.\nTierno langostino, corazon de salsa golf y palta fresca.\nEnvuelto en arroz y alga nori",
           "is_fried": false,
           "price": 5400,
           "image": "/images/rolls/langostino.jpg"
@@ -44,6 +76,7 @@
             "alga nori",
             "rebozado"
           ],
+          "description": "*Crujiente y Caliente*. Langostinos salteados en pimentón que le dan un toque ahumado único, combinados con queso crema saborizado y palta.\n¡La perfecta tentación rebozada!",
           "is_fried": true,
           "price": 5400,
           "image": "/images/rolls/langostinos-pimenton.jpg"
@@ -56,6 +89,7 @@
             "Langostinos", 
             "rebozado"
           ],
+          "description": "*Exquisito langostino en tempura*.\nDisfrutá de la combinación de la cobertura crujiente y caliente con la ternura del langostino.\nUna entrada ideal y adictiva.",
           "is_fried": true,
           "price": 1500,
           "image": "/images/rolls/langostinos-rebozados.jpg",
@@ -68,6 +102,7 @@
             "perla de arroz",
             "mix de semilas de sesamo"
           ],
+          "description": "*La esencia del sushi*. Langostino fresco y tierno sobre una base de arroz de sushi perfectamente sazonado, sellado con una fina capa de alga nori.\nElegancia en un bocado.",
           "is_fried": false,
           "price": 1600,
           "image": "/images/rolls/nigiri-langostinos.jpg",
@@ -87,6 +122,7 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
+          "description": "*El favorito de todos*. Salmón y palta que se funden con el untuoso queso crema.\nLa textura es coronada por el crocante exterior de sésamo.",
           "is_fried": false,
           "price": 5700,
           "image": "/images/rolls/salmon-crudo.jpg",
@@ -100,6 +136,7 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
+          "description": "*Un roll cocido agridulce*. Tiras de samón cocido con miel y mostaza, suave queso crema saborizado y un topping de sésamo.",
           "is_fried": false,
           "price": 5700,
           "image": "/images/rolls/salmon-cocido.jpg",
@@ -112,6 +149,7 @@
             "perla de arroz",
             "mix de semillas de sesamo"
           ],
+          "description": "*Tierno lomo de salmón de primera calidad* dispuesto sobre una almohada de arroz.\nIdeal para apreciar la frescura de nuestros ingredientes",
           "is_fried": false,
           "price": 1700,
           "image": "/images/rolls/nigiri-salmon.jpg",
@@ -123,7 +161,7 @@
       "name": "Kanikama",
       "items": [
         {
-          "name": "Kanikama",
+          "name": "Clásico de Kani-kama",
           "ingredients": [
             "Kanikama",
             "queso crema saborizado",
@@ -131,11 +169,27 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
+          "description": "*Un roll equilibrado*. La suavidad del Kanikana, la cremosidad de la palta, y el corazon de queso crema saborizado.\nAlga nori y mix de sésamo.",
           "is_fried": false,
           "price": 5200,
           "image": "/images/rolls/kanikama.jpg",
           "pieces": 5
-        }
+        },
+        {
+          "name": "Kani-kama Golf",
+          "ingredients": [
+            "Kanikama",
+            "queso crema saborizado",
+            "palta",
+            "alga nori",
+            "mix de semillas de sesamo"
+          ],
+          "description": "*El sabor delicado del Kanikama* (surimi) mezclado con un toque de palta fresca. Todo unido por un toque de salsa golf.\nCon alga nori. Fácil de amar.",
+          "is_fried": false,
+          "price": 5200,
+          "image": "/images/rolls/kanikama.jpg",
+          "pieces": 5
+        },
       ]
     },
     {
@@ -148,9 +202,10 @@
             "queso crema saborizado", 
             "alga nori"
           ],
+          "description": "",
           "is_fried": false,
           "price": 4900,
-          "image": "/images/rolls/pickes.jpg",
+          "image": "/images/rolls/pickles.jpg",
           "pieces": 5
         }
       ]
@@ -167,6 +222,7 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
+          "description": "",
           "is_fried": false,
           "price": 5300,
           "image": "/images/rolls/atun.jpg",
@@ -181,6 +237,7 @@
             "alga nori",
             "rebozado"
           ],
+          "description": "",
           "is_fried": true,
           "price": 5500,
           "image": "/images/rolls/atun-morron.jpg",
