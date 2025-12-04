@@ -78,10 +78,74 @@ export default function About() {
                   </div>
                 </div>
               </div>
+
+              {/* Sección Horarios & Ubicación */}
+              <div className="flex flex-col">
+                <h2 className="font-clash text-2xl text-foreground dark:text-muted font-bold leading-tight pb-4">
+                  Horarios & Ubicación
+                </h2>
+                <div className="grid grid-cols-[auto_1fr] gap-x-6 border-t border-muted dark:border-muted/30">
+                  <div className="col-span-2 grid grid-cols-subgrid py-4">
+                    <p className="text-muted-foreground dark:text-muted/80 text-sm font-satoshi font-normal">
+                      Viernes - Sábado
+                    </p>
+                    <p className="text-foreground dark:text-muted text-sm font-satoshi font-medium">
+                      8:00 AM - 23:00 PM
+                    </p>
+                  </div>
+                  <div className="col-span-2 grid grid-cols-subgrid border-t border-muted dark:border-muted/30 py-4">
+                    <p className="text-muted-foreground dark:text-muted/80 text-sm font-satoshi font-normal">
+                      Dirección
+                    </p>
+                    <p className="text-foreground dark:text-muted text-sm font-satoshi font-medium">
+                      Calle Estrada 206, esquina Córdoba, Puerto Rico, Misiones
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sección Contacto */}
+              <div className="flex flex-col">
+                <h2 className="font-clash text-2xl text-foreground dark:text-muted font-bold leading-tight pb-4">
+                  Contacto
+                </h2>
+                <div className="grid grid-cols-[auto_1fr] gap-x-6 border-t border-muted dark:border-muted/30">
+                  <div className="col-span-2 grid grid-cols-subgrid py-4">
+                    <p className="text-muted-foreground dark:text-muted/80 text-sm font-satoshi font-normal">
+                      Teléfono 1
+                    </p>
+                    <p className="text-foreground dark:text-muted text-sm font-satoshi font-medium">
+                      3743 417060
+                    </p>
+                  </div>
+                  <div className="col-span-2 grid grid-cols-subgrid border-t border-muted dark:border-muted/30 py-4">
+                    <p className="text-muted-foreground dark:text-muted/80 text-sm font-satoshi font-normal">
+                      Teléfono 2
+                    </p>
+                    <p className="text-foreground dark:text-muted text-sm font-satoshi font-medium">
+                      3743 502117
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Botón de acción */}
+              <div className="pt-2">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary dark:bg-accent text-white font-satoshi font-medium rounded-lg hover:bg-primary/90 dark:hover:bg-accent/90 transition-colors shadow-md hover:shadow-lg"
+                >
+                  <span>Hacer un pedido</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   );
 }
