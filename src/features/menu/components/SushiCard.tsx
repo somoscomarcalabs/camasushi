@@ -31,17 +31,17 @@ export default function SushiCard({ sushi }: SushiProps) {
   };
 
   return (
-    <div data-testid="sushi-card" className="group relative w-full max-w-xl overflow-hidden rounded-[2rem] border-2 border-secondary/50 bg-foreground p-4 text-white shadow-lg transition-all duration-300 hover:border-primary hover:shadow-primary/20 ">
+    <div data-testid="sushi-card" className="group relative w-full max-w-xl overflow-hidden rounded-[2rem] border-2 border-secondary/50 bg-foreground p-4 text-white shadow-lg transition-all duration-300 hover:border-accent hover:shadow-primary/20 ">
 
       <div className="flex flex-col sm:flex-row items-center gap-6">
 
         {/* Image & Badge */}
-        <div className="relative h-32 w-32 shrink-0">
+        <div className="relative h-35 w-35 shrink-0">
           <Image
             src={sushi.image}
             alt={sushi.name}
             fill
-            className="rounded-full object-cover shadow-lg transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110"
+            className="rounded-full radius-full object-cover shadow-lg transition-transform scale-[1.3] duration-500 group-hover:rotate-6 group-hover:scale-150"
           />
           {sushi.is_fried && (
             <span className="absolute -top-2 -left-2 rotate-[-10deg] rounded-full bg-red-600 px-3 py-1 text-[10px] font-bold tracking-widest text-white shadow-md transition-transform group-hover:rotate-0">
@@ -55,11 +55,13 @@ export default function SushiCard({ sushi }: SushiProps) {
           <h3 className="mb-1 text-2xl font-bold tracking-tight text-white">
             {sushi.name}
           </h3>
-
-          <p data-testid="sushi-description" className="text-sm leading-relaxed text-gray-400 whitespace-pre-line">
-            {renderDescription(sushi.description)}
-          </p>
-
+          <div className='grid group-hover:grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out grid-rows-[1fr]'>
+            <div className='overflow-hidden'>
+              <p data-testid="sushi-description" className="text-sm leading-relaxed text-gray-400 whitespace-pre-line">
+                {renderDescription(sushi.description)}
+              </p>
+            </div>
+          </div>
           {/* Hidden Ingredients (Revealed on Hover) */}
           <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr]">
             <div className="overflow-hidden">
