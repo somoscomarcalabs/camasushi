@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { whatsappUrl, mapUrl } from '@/features/contact/contact';
+import { whatsappUrl, mapUrl } from '@/features/contact/info';
 
 export default function About() {
   return (

@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 
-import { whatsappUrl, instagramUrl } from "@/features/contact/contact";
+import { whatsappUrl, instagramUrl } from "@/features/contact/info";
 
 export default function Footer() {
   return (
