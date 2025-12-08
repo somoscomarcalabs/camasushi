@@ -16,8 +16,8 @@ describe('About', () => {
     expect(screen.getByRole('heading', { level: 2, name: /nuestra historia/i })).toBeInTheDocument();
   });
 
-  test('Renders the "Descubre la pasión detrás de cada roll" subtitle', () => {
-    expect(screen.getByText(/Descubre la pasión detrás de cada roll/i)).toBeInTheDocument();
+  test('Renders the "Descubrí la pasión detrás de cada roll" subtitle', () => {
+    expect(screen.getByText(/Descubrí la pasión detrás de cada roll/i)).toBeInTheDocument();
   });
 
   test('Renders the "Hacer un pedido" button', () => {
