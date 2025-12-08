@@ -19,7 +19,7 @@ export default function About() {
                   </h2>
 
                   <p className="text-lg md:text-xl text-muted-foreground font-satoshi font-medium">
-                    Descubre la pasión detrás de cada roll
+                    Descubrí la pasión detrás de cada roll
                   </p>
 
                   <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function About() {
                         </svg>
                       </div>
                       <h3 className="font-clash text-xl text-foreground dark:text-muted font-bold">
-                        Horarios
+                        Horarios de Entrega
                       </h3>
                     </div>
                     <div className="space-y-3 pl-11">
@@ -139,12 +139,12 @@ export default function About() {
             <div className="w-full lg:w-1/2">
               <div className="space-y-8">
                 <div className="space-y-6 mt-10">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-clash text-foreground dark:text-muted text-center lg:text-left">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-clash lg:text-left">
                     Encontranos <span className="text-primary">Fácilmente</span>
                   </h2>
 
-                  <p className="text-lg md:text-xl text-muted-foreground font-satoshi font-medium">
-                    Ubicados en el corazón de Puerto Rico
+                  <p className="text-lg md:text-xl font-satoshi font-medium">
+                    Ubicados en el corazón de Puerto Rico.
                   </p>
 
                   <div className="space-y-6">
@@ -155,24 +155,24 @@ export default function About() {
                             <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <h3 className="font-clash text-2xl text-foreground dark:text-muted font-bold">
-                          Dirección Completa
+                        <h3 className="font-clash text-2xl font-bold">
+                          Dirección
                         </h3>
                       </div>
                       <div className="space-y-4 pl-11">
                         <div>
-                          <p className="text-foreground dark:text-muted text-lg font-satoshi font-medium">
+                          <p className="text-lg font-satoshi font-medium">
                             José Manuel Estrada 206
                           </p>
-                          <p className="text-muted-foreground dark:text-muted/80 text-sm font-satoshi">
+                          <p className="dark:text-muted/80 text-sm font-satoshi">
                             Esquina Córdoba
                           </p>
                         </div>
                         <div>
-                          <p className="text-foreground dark:text-muted text-lg font-satoshi font-medium">
+                          <p className="text-lg font-satoshi font-medium">
                             Puerto Rico, Misiones
                           </p>
-                          <p className="text-muted-foreground dark:text-muted/80 text-sm font-satoshi">
+                          <p className="dark:text-muted/80 text-sm font-satoshi">
                             N3334
                           </p>
                         </div>
