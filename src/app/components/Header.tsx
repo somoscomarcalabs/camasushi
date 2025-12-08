@@ -17,7 +17,7 @@ export default function Header() {
             alt="Logo"
             fill
             sizes="(max-width: 768px) 100px, 150px"
-            className="h-auto block dark:hidden"
+            className="h-auto block dark:hidden object-cover"
             priority={false}
             loading="eager"
           />
@@ -27,7 +27,7 @@ export default function Header() {
             alt="LogoDark"
             fill
             sizes="(max-width: 768px) 100px, 150px"
-            className="h-auto hidden dark:block"
+            className="h-auto hidden dark:block object-cover"
             priority={false}
             loading="eager"
           />
