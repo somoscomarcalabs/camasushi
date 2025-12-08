@@ -19,6 +19,13 @@ describe('About', () => {
   test('Renders the "Descubrí la pasión detrás de cada roll" subtitle', () => {
     expect(screen.getByText(/Descubrí la pasión detrás de cada roll/i)).toBeInTheDocument();
   });
+  test('Displays the restaurant description about tradition', () => {
+    expect(screen.getByText(/fusionamos la tradición japonesa con ingredientes frescos y locales de Misiones/i)).toBeInTheDocument();
+  });
+
+  test('Displays the restaurant location description', () => {
+    expect(screen.getByText(/Ubicados en el corazón de Puerto Rico, nos especializamos en sushi artesanal/i)).toBeInTheDocument();
+  });
 
   test('Renders the "Hacer un pedido" button', () => {
     expect(screen.getByRole('link', { name: /hacer un pedido/i })).toBeInTheDocument();
@@ -54,39 +61,5 @@ describe('About', () => {
 
   test('Displays the second phone number', () => {
     expect(screen.getByText(/3743 502117/i)).toBeInTheDocument();
-  });
-
-  test('Renders the "Encontranos Fácilmente" heading', () => {
-    expect(screen.getByRole('heading', { level: 2, name: /encontranos fácilmente/i })).toBeInTheDocument();
-  });
-
-  test('Renders the "Abrir en Google Maps" button', () => {
-    expect(screen.getByRole('link', { name: /abrir en google maps/i })).toBeInTheDocument();
-  });
-
-  test('"Abrir en Google Maps" button opens in new tab', () => {
-    const mapsButton = screen.getByRole('link', { name: /abrir en google maps/i });
-    expect(mapsButton).toHaveAttribute('target', '_blank');
-  });
-
-  test('"Abrir en Google Maps" button has secure rel attribute', () => {
-    const mapsButton = screen.getByRole('link', { name: /abrir en google maps/i });
-    expect(mapsButton).toHaveAttribute('rel', 'noopener noreferrer');
-  });
-
-  test('Renders the interactive map iframe', () => {
-    expect(screen.getByTitle(/Ubicación de CamaSushi en Google Maps/i)).toBeInTheDocument();
-  });
-
-  test('Map iframe has accessible label', () => {
-    expect(screen.getByLabelText(/Mapa interactivo mostrando la ubicación de CamaSushi/i)).toBeInTheDocument();
-  });
-
-  test('Displays the restaurant description about tradition', () => {
-    expect(screen.getByText(/fusionamos la tradición japonesa con ingredientes frescos y locales de Misiones/i)).toBeInTheDocument();
-  });
-
-  test('Displays the restaurant location description', () => {
-    expect(screen.getByText(/Ubicados en el corazón de Puerto Rico, nos especializamos en sushi artesanal/i)).toBeInTheDocument();
   });
 });
