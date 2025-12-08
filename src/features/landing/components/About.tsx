@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { whatsappUrl, mapUrl } from '@/features/contact/info';
 
 export default function About() {
@@ -10,21 +9,7 @@ export default function About() {
       <section id="about" className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted min-h-screen flex flex-col justify-center py-12 md:py-0">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 w-full mt-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
-
-            {/* Imagen - Lado izquierdo */}
-            <div className="w-full lg:w-1/2">
-              <div className="relative h-64 md:h-80 lg:h-96 w-full rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="/images/about/about-image.jpg"
-                  alt="Sobre CamaSushi"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                />
-              </div>
-            </div>
-
-            {/* Contenido - Lado derecho */}
+            {/* Contenido - Lado izquierdo */}
             <div className="w-full lg:w-1/2">
               <div className="space-y-8">
                 {/* Título y descripción principal */}
@@ -49,9 +34,17 @@ export default function About() {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Contenido - Lado derecho */}
+            <div className="w-full lg:w-1/2">
+              <div className="space-y-8">
+                {/* Línea divisoria para desktop */}
+                <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 to p-1/4 h-2/3 w-px bg-muted/30 dark:bg-muted/20"></div>
 
                 {/* Información práctica en tarjetas */}
-                <div className="space-y-8 pt-6 border-t border-muted/30 dark:border-muted/20">
+                <div className="space-y-8 pt-0 lg:pt-6 border-t lg:border-t-0 border-muted/30 dark:border-muted/20">
                   {/* Horarios */}
                   <div className="p-6 bg-background/50 dark:bg-secondary/30 rounded-xl">
                     <div className="flex items-center gap-3 mb-4">
@@ -70,7 +63,7 @@ export default function About() {
                           Viernes - Sábado
                         </span>
                         <span className="text-foreground dark:text-muted text-sm font-satoshi font-medium">
-                          8:00 AM - 23:00 PM
+                          A Partir de las 19:00 PM
                         </span>
                       </div>
                     </div>
@@ -120,7 +113,7 @@ export default function About() {
                 </div>
 
                 {/* Botón de acción centrado */}
-                <div className="pt-4 text-center md:text-left">
+                <div className="pt-4 text-center md:text-center lg:col-span-2">
                   <a
                     href={whatsappUrl}
                     className="inline-flex items-center gap-2 px-8 py-3 bg-primary dark:bg-accent text-white font-satoshi font-medium rounded-lg hover:bg-primary/90 dark:hover:bg-accent/90 transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -146,7 +139,7 @@ export default function About() {
             <div className="w-full lg:w-1/2">
               <div className="space-y-8">
                 <div className="space-y-6 mt-10">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-clash text-foreground dark:text-muted">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-clash text-foreground dark:text-muted text-center lg:text-left">
                     Encontranos <span className="text-primary">Fácilmente</span>
                   </h2>
 
@@ -187,7 +180,7 @@ export default function About() {
                     </div>
 
                     {/* Botón para abrir en Maps */}
-                    <div className="w-full flex justify-center pt-4">
+                    <div className="w-full flex justify-center lg:justify-start pt-4">
                       <a
                         href="https://maps.google.com/?q=José+Manuel+Estrada+206,N3334+Puerto+Rico,Misiones"
                         target="_blank"
