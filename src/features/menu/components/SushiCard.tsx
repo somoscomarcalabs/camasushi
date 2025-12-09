@@ -23,7 +23,7 @@ export default function SushiCard({ sushi }: SushiProps) {
   };
 
   return (
-    <div data-testid="sushi-card" className="group relative w-full max-w-xl overflow-hidden rounded-[2rem] border-2 border-secondary/50 bg-foreground p-4 text-white shadow-lg transition-all duration-300 hover:border-accent hover:shadow-primary/20 ">
+    <div data-testid="sushi-card" className="group relative w-full max-w-xl rounded-[4rem] bg-foreground p-4 text-white shadow-lg transition-all duration-300 hover:shadow-primary/20 m-5 border-3 border-secondary">
 
       <div className="flex flex-col sm:flex-row items-center gap-6">
 
@@ -33,10 +33,10 @@ export default function SushiCard({ sushi }: SushiProps) {
             src={sushi.image}
             alt={sushi.name}
             fill
-            className="rounded-full rounded-full object-cover shadow-lg transition-transform scale-[1.3] duration-500 group-hover:rotate-6 group-hover:scale-150"
+            className="rounded-full rounded-full object-cover transition-transform scale-[1.3] duration-500 group-hover:rotate-6 group-hover:scale-150"
           />
           {sushi.is_fried && (
-            <span className="absolute -top-2 -left-2 rotate-[-10deg] rounded-full bg-red-600 px-3 py-1 text-[10px] font-bold tracking-widest text-white shadow-md transition-transform group-hover:rotate-0">
+            <span className="absolute -top-0 -left-0 md:rotate-[-10deg] rounded-full bg-red-600 px-3 py-1 text-[10px] font-bold tracking-widest text-white shadow-md transition-transform group-hover:rotate-0">
               HOT ROLL
             </span>
           )}
@@ -49,15 +49,15 @@ export default function SushiCard({ sushi }: SushiProps) {
           </h3>
           <div className='grid group-hover:grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out grid-rows-[1fr]'>
             <div className='overflow-hidden'>
-              <p data-testid="sushi-description" className="text-sm leading-relaxed text-gray-400 whitespace-pre-line">
+              <p data-testid="sushi-description" className="text-sm leading-relaxed text-muted whitespace-pre-line">
                 {renderDescription(sushi.description)}
               </p>
             </div>
           </div>
           {/* Hidden Ingredients (Revealed on Hover) */}
-          <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr]">
+          <div className="grid md:grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr]">
             <div className="overflow-hidden">
-              <p className="mt-3 text-xs italic text-orange-400/90">
+              <p className="mt-3 text-sm italic text-orange-400/90">
                 Ingredientes: {sushi.ingredients.join(", ")}
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function SushiCard({ sushi }: SushiProps) {
             </span>
             <span className="text-sm font-medium text-gray-400">unidades</span>
           </div>
-          <span className="mt-1 text-3xl font-bold text-orange-500">
+          <span className="mt-1 text-3xl font-bold text-primary">
             ${sushi.price.toLocaleString("es-AR")}
           </span>
         </div>

@@ -8,12 +8,12 @@ interface MenuProps {
 
 export default function Menu({ categories }: MenuProps) {
   return (
-    <div data-testid="menu-container" className='space-y-10 grid grid-col-1 md:grid-cols-2 gap-8'>
+    <div data-testid="menu-container" id="#menu" className='grid grid-cols-1 md:grid-cols-2 md:p-[0.5rem] p-[1.5rem] justify-items-center dark:bg-foreground'>
       {
         categories.map((category) => (
-          <div key={category.name} className=''>
+          <div key={category.name} >
             {category.items.map((item) => (
-              <div data-testid="menu-item" key={item.id}>
+              <div data-testid="menu-item" key={item.id} className='grid justify-items-center'>
                 <SushiCard sushi={item} />
               </div>
             ))}
