@@ -63,3 +63,45 @@ describe("Menu component", () => {
     expect(screen.getAllByTestId("mock-sushi-card")[0]).toHaveTextContent("Pacú");
   });
 });
+
+test("Menu renders items in a responsive grid layout", () => {
+  const mockCategories: MenuCategory[] = [
+    {
+      name: "Pacú",
+      items: [
+        {
+          id: 1,
+          name: "Roll de Pacú",
+          ingredients: ["Pacú", "queso"],
+          description: "Description",
+          is_fried: true,
+          price: 5000,
+          image: "/img.jpg",
+          pieces: 5
+        }
+      ]
+    },
+    {
+      name: "Langostinos",
+      items: [
+        {
+          id: 2,
+          name: "Atun",
+          ingredients: ["Atún", "queso"],
+          description: "Description",
+          is_fried: false,
+          price: 1000,
+          image: "/img.jpg",
+          pieces: 5
+
+        }
+      ]
+    }
+  ]
+  render(<Menu categories={mockCategories} />);
+
+  expect(screen.getByTestId("menu-container")).toHaveClass("grid");
+  expect(screen.getByTestId("menu-container")).toHaveClass("grid-col-1");
+  expect(screen.getByTestId("menu-container")).toHaveClass("md:grid-cols-2");
+  expect(screen.getByTestId("menu-container")).toHaveClass("gap-8")
+})
