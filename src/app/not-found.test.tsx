@@ -16,7 +16,7 @@ describe('NotFound page', () => {
 
   test('renders a 404 image from public folder', () => {
     render(<NotFound />);
-    const img = screen.getByAltText('404 illustration') as HTMLImageElement;
+    const img = screen.getByAltText('Error 404 - Página no encontrada') as HTMLImageElement;
     expect(img).toBeInTheDocument();
     expect(img.src).toContain('/images/ui/404-light-transparente.png');
   });

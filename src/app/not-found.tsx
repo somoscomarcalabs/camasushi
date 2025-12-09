@@ -13,7 +13,7 @@ const IMAGE_404_DARK = '/images/ui/404-dark-transparente.png';
 export default function NotFound() {
   return (
     // Utilizamos la sección principal con los colores de fondo inferidos y min-h-screen
-    <section className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted min-h-screen flex flex-col justify-center py-12 md:py-0">
+    <section data-testid="not-found-page" className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted min-h-screen flex flex-col justify-center py-12 md:py-0">
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 w-full flex flex-col items-center justify-center text-center">
 
