@@ -8,7 +8,7 @@ interface MenuProps {
 
 export default function Menu({ categories }: MenuProps) {
   return (
-    <div data-testid="menu-container">
+    <div data-testid="menu-container" className='space-y-10'>
       {
         categories.map((category) => (
           <div key={category.name}>
@@ -20,6 +20,6 @@ export default function Menu({ categories }: MenuProps) {
           </div>
         ))
       }
-    </div>
+    </div >
   )
 }
