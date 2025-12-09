@@ -11,7 +11,8 @@ export default function Menu({ categories }: MenuProps) {
     <div data-testid="menu-container" id="#menu" className='grid grid-cols-1 md:grid-cols-2 md:p-[0.5rem] p-[1.5rem] justify-items-center dark:bg-foreground'>
       {
         categories.map((category) => (
-          <div key={category.name} >
+          <div key={category.name}>
+            <h2>{category.name}</h2>
             {category.items.map((item) => (
               <div data-testid="menu-item" key={item.id} className='grid justify-items-center'>
                 <SushiCard sushi={item} />

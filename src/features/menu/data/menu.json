@@ -4,6 +4,7 @@
       "name": "Pacú",
       "items": [
         {
+          "id": 1,
           "name": "Clásico de Pacú",
           "ingredients": [
             "Pacú",
@@ -11,13 +12,14 @@
             "alga nori",
             "rebozado"
           ],
-          "description": "*Una pieza de sushi caliente con un toque local*. Relleno de pacú y queso crema saborizado, rebozado.\nLa perfecta combinacion de un sabor fuerte y un exterior crocante.",
+          "description": "*Una pieza de sushi con un toque local*. Relleno de pacú y queso crema saborizado, rebozado.",
           "is_fried": true,
           "price": 5300,
-          "image": "/images/rolls/pacu.jpg",
+          "image": "/images/rolls/pacu.png",
           "pieces": 5
         },
         {
+          "id": 2,
           "name": "Pacú y Morrones Asados",
           "ingredients": [
             "Pacú",
@@ -26,18 +28,19 @@
             "alga nori",
             "rebozado"
           ],
-          "description": "*Fusión Litoral Caliente*. Un roll único con tierna carne de pacú (pescado de río).\nBalanceado por el suave queso crema y el toque dulce y ahumado del morrón asado.",
+          "description": "Roll único con tierna carne de pacú, balanceado por el queso crema y el ahumado del morrón asado.",
           "is_fried": true,
           "price": 5300,
-          "image": "/images/rolls/pacu.jpg",
+          "image": "/images/rolls/pacu-morron.png",
           "pieces": 5
-        },
+        }
       ]
     },
     {
       "name": "Langostinos",
       "items": [
         {
+          "id": 3,
           "name": "Clásico de Langostinos",
           "ingredients": [
             "Langostinos",
@@ -48,26 +51,21 @@
           "description": "*La dupla imbatible de langostino y palta* envuelta en una explosión de queso crema.",
           "is_fried": false,
           "price": 5400,
-          "image": "/images/rolls/langostino.jpg"
+          "image": "/images/rolls/langostino-clasico.png",
           "pieces": 5
-
         },
         {
+          "id": 4,
           "name": "Langostino Golf",
-          "ingredients": [
-            "Langostinos",
-            "salsa golf",
-            "palta",
-            "alga nori"
-          ],
-          "description": "*Sabor tradicional*.\nTierno langostino, corazon de salsa golf y palta fresca.\nEnvuelto en arroz y alga nori",
+          "ingredients": ["Langostinos", "salsa golf", "palta", "alga nori"],
+          "description": "*Sabor tradicional*.\nTierno langostino, corazon de salsa golf y palta fresca.",
           "is_fried": false,
           "price": 5400,
-          "image": "/images/rolls/langostino.jpg"
+          "image": "/images/rolls/langostino-golf.png",
           "pieces": 5
-
         },
         {
+          "id": 5,
           "name": "Langostinos al Pimentón",
           "ingredients": [
             "Langostinos salteados con pimentón",
@@ -76,36 +74,34 @@
             "alga nori",
             "rebozado"
           ],
-          "description": "*Crujiente y Caliente*. Langostinos salteados en pimentón que le dan un toque ahumado único, combinados con queso crema saborizado y palta.\n¡La perfecta tentación rebozada!",
+          "description": "Langostinos salteados en pimentón que le dan un toque ahumado único, combinados con queso crema saborizado y palta.",
           "is_fried": true,
           "price": 5400,
-          "image": "/images/rolls/langostinos-pimenton.jpg"
+          "image": "/images/rolls/langostino-pimentón.png",
           "pieces": 5
-
         },
         {
+          "id": 6,
           "name": "Langostinos rebozados",
-          "ingredients": [
-            "Langostinos", 
-            "rebozado"
-          ],
-          "description": "*Exquisito langostino en tempura*.\nDisfrutá de la combinación de la cobertura crujiente y caliente con la ternura del langostino.\nUna entrada ideal y adictiva.",
+          "ingredients": ["Langostinos", "rebozado"],
+          "description": "*Exquisito langostino en tempura*.\nCobertura crujiente y caliente con la ternura del langostino.",
           "is_fried": true,
           "price": 1500,
-          "image": "/images/rolls/langostinos-rebozados.jpg",
+          "image": "/images/rolls/langostino-rebozado.png",
           "pieces": 1
         },
         {
+          "id": 7,
           "name": "Nigiri de langostino",
           "ingredients": [
             "Langostino",
             "perla de arroz",
             "mix de semilas de sesamo"
           ],
-          "description": "*La esencia del sushi*. Langostino fresco y tierno sobre una base de arroz de sushi perfectamente sazonado, sellado con una fina capa de alga nori.\nElegancia en un bocado.",
+          "description": "Langostino fresco y tierno sobre una base de arroz de sushi, sellado con una fina capa de alga nori.\nElegancia en un bocado.",
           "is_fried": false,
           "price": 1600,
-          "image": "/images/rolls/nigiri-langostinos.jpg",
+          "image": "/images/rolls/nigiri-langostino.png",
           "pieces": 1
         }
       ]
@@ -114,6 +110,7 @@
       "name": "Salmón",
       "items": [
         {
+          "id": 8,
           "name": "Clásico de Salmón",
           "ingredients": [
             "Salmon",
@@ -122,13 +119,14 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
-          "description": "*El favorito de todos*. Salmón y palta que se funden con el untuoso queso crema.\nLa textura es coronada por el crocante exterior de sésamo.",
+          "description": "*El favorito de todos*. Salmón y palta que se funden con el untuoso queso crema.\nCoronado con sésamo.",
           "is_fried": false,
           "price": 5700,
-          "image": "/images/rolls/salmon-crudo.jpg",
+          "image": "/images/rolls/salmon-clasico.png",
           "pieces": 5
         },
         {
+          "id": 9,
           "name": "Salmón cocido",
           "ingredients": [
             "Salmon cocido con miel y mostaza",
@@ -139,20 +137,21 @@
           "description": "*Un roll cocido agridulce*. Tiras de samón cocido con miel y mostaza, suave queso crema saborizado y un topping de sésamo.",
           "is_fried": false,
           "price": 5700,
-          "image": "/images/rolls/salmon-cocido.jpg",
+          "image": "/images/rolls/salmon-cocido.png",
           "pieces": 5
         },
         {
+          "id": 10,
           "name": "Nigiri de Salmón",
           "ingredients": [
             "Salmon",
             "perla de arroz",
             "mix de semillas de sesamo"
           ],
-          "description": "*Tierno lomo de salmón de primera calidad* dispuesto sobre una almohada de arroz.\nIdeal para apreciar la frescura de nuestros ingredientes",
+          "description": "*Tierno lomo de salmón de primera calidad* dispuesto sobre una base de arroz.",
           "is_fried": false,
           "price": 1700,
-          "image": "/images/rolls/nigiri-salmon.jpg",
+          "image": "/images/rolls/nigiri-salmon.png",
           "pieces": 1
         }
       ]
@@ -161,6 +160,7 @@
       "name": "Kanikama",
       "items": [
         {
+          "id": 11,
           "name": "Clásico de Kani-kama",
           "ingredients": [
             "Kanikama",
@@ -169,13 +169,14 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
-          "description": "*Un roll equilibrado*. La suavidad del Kanikana, la cremosidad de la palta, y el corazon de queso crema saborizado.\nAlga nori y mix de sésamo.",
+          "description": "*Un roll equilibrado*. Kanikama, palta, y el corazon de queso crema saborizado. Mix de sésamo.",
           "is_fried": false,
           "price": 5200,
-          "image": "/images/rolls/kanikama.jpg",
+          "image": "/images/rolls/kanikama-clasico.png",
           "pieces": 5
         },
         {
+          "id": 12,
           "name": "Kani-kama Golf",
           "ingredients": [
             "Kanikama",
@@ -184,24 +185,21 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
-          "description": "*El sabor delicado del Kanikama* (surimi) mezclado con un toque de palta fresca. Todo unido por un toque de salsa golf.\nCon alga nori. Fácil de amar.",
+          "description": "*El sabor delicado del Kanikama* mezclado con palta fresca. Todo unido por un toque de salsa golf.",
           "is_fried": false,
           "price": 5200,
-          "image": "/images/rolls/kanikama.jpg",
+          "image": "/images/rolls/kanikama-golf.png",
           "pieces": 5
-        },
+        }
       ]
     },
     {
       "name": "Pickles",
       "items": [
         {
+          "id": 13,
           "name": "Pickes",
-          "ingredients": [
-            "Pickes", 
-            "queso crema saborizado", 
-            "alga nori"
-          ],
+          "ingredients": ["Pickes", "queso crema saborizado", "alga nori"],
           "description": "",
           "is_fried": false,
           "price": 4900,
@@ -214,6 +212,7 @@
       "name": "Atún",
       "items": [
         {
+          "id": 14,
           "name": "Clásico de Atún",
           "ingredients": [
             "Lomos de Atún",
@@ -229,6 +228,7 @@
           "pieces": 5
         },
         {
+          "id": 15,
           "name": "Atún con morrones",
           "ingredients": [
             "Lomos de Atún",
