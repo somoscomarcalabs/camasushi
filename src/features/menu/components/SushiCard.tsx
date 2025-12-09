@@ -1,16 +1,8 @@
 import Image from 'next/image';
+import { SushiItem } from '@/types/Menu';
 
 interface SushiProps {
-  sushi: {
-    id: number,
-    name: string,
-    ingredients: string[],
-    description: string,
-    is_fried: boolean,
-    price: number,
-    image: string,
-    pieces: number
-  }
+  sushi: SushiItem
 }
 
 export default function SushiCard({ sushi }: SushiProps) {
@@ -36,12 +28,12 @@ export default function SushiCard({ sushi }: SushiProps) {
       <div className="flex flex-col sm:flex-row items-center gap-6">
 
         {/* Image & Badge */}
-        <div className="relative h-35 w-35 shrink-0">
+        <div className="relative h-36 w-36 shrink-0">
           <Image
             src={sushi.image}
             alt={sushi.name}
             fill
-            className="rounded-full radius-full object-cover shadow-lg transition-transform scale-[1.3] duration-500 group-hover:rotate-6 group-hover:scale-150"
+            className="rounded-full rounded-full object-cover shadow-lg transition-transform scale-[1.3] duration-500 group-hover:rotate-6 group-hover:scale-150"
           />
           {sushi.is_fried && (
             <span className="absolute -top-2 -left-2 rotate-[-10deg] rounded-full bg-red-600 px-3 py-1 text-[10px] font-bold tracking-widest text-white shadow-md transition-transform group-hover:rotate-0">
