@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       {/* Sección Mapa - Ocupa toda la pantalla */}
-      <section id="contact" className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted min-h-screen flex flex-col justify-center py-12 md:py-0">
+      <section id="location" className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted min-h-screen flex flex-col justify-center py-12 md:py-0">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
 
