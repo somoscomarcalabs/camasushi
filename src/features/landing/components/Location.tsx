@@ -1,7 +1,7 @@
 'use client';
 import { mapUrl } from '@/features/contact/info';
 
-export default function Contact() {
+export default function Location() {
   return (
     <>
       {/* Sección Mapa - Ocupa toda la pantalla */}
