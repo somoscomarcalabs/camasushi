@@ -9,7 +9,7 @@ interface MenuProps {
 export default function Menu({ categories }: MenuProps) {
   return (
     <div data-testid="menu-container" id="menu" className='grid grid-cols-1 md:p-[0.5rem] p-[1.5rem] justify-items-center dark:bg-foreground'>
-      <h1 className='text-6xl mt-20 text-center'>Nuestro Menú</h1>
+      <h1 className='text-6xl mt-20 text-center dark:text-white'>Nuestro Menú</h1>
       {
         categories.map((category) => (
           <div key={category.name}>

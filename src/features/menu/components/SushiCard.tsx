@@ -23,7 +23,7 @@ export default function SushiCard({ sushi }: SushiProps) {
   };
 
   return (
-    <div data-testid="sushi-card" className="group relative w-full max-w-xl rounded-[4rem] bg-foreground p-4 text-white shadow-lg transition-all duration-300 hover:shadow-primary/20 m-5 border-3 border-secondary">
+    <div data-testid="sushi-card" className="group relative w-full max-w-xl rounded-[4rem] bg-foreground p-4 text-white shadow-lg transition-all duration-300 hover:shadow-secondary/30 dark:hover:shadow-secondary/60 m-5 border-3 border-secondary">
 
       <div className="flex flex-col sm:flex-row items-center gap-6">
 
