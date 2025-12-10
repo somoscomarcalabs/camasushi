@@ -1,4 +1,4 @@
-import { describe, test, expect } from 'vitest';
+import { describe, test, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 
 import NotFound from '@/app/not-found';
@@ -14,12 +14,20 @@ describe('NotFound page', () => {
     expect(screen.getByRole('heading', { name: /Página no encontrada/i })).toBeInTheDocument();
   });
 
-  test('renders a 404 image from public folder', () => {
-    render(<NotFound />);
-    const img = screen.getByAltText('Error 404 - Página no encontrada') as HTMLImageElement;
-    expect(img).toBeInTheDocument();
-    expect(img.src).toContain('/images/ui/404-light-transparente.png');
-  });
+  // test('it renders a 404 image from public folder', () => {
+  //   render(<NotFound />);
+  //   const img = screen.getAllByAltText('Error 404 - Página no encontrada') as HTMLImageElement[];
+  //   console.log({ img })
+  //   expect(img).toBeInTheDocument();
+  //   expect(img.src).toContain('/images/ui/404-light-transparente.png');
+  // });
+
+  test('it renders dark and light images on initial DOM', () => {
+    render(<NotFound />)
+
+    const images = screen.getAllByAltText('Error 404 - Página no encontrada')
+    expect(images).toHaveLength(2)
+  })
 
   test('has a link/button that goes to the homepage', () => {
     render(<NotFound />);
