@@ -33,9 +33,9 @@ describe("Menu component", () => {
       name: "Langostinos",
       items: [
         {
-          id: 2,
-          name: "Atun",
-          ingredients: ["Atún", "queso"],
+          id: 3,
+          name: "Langostinos",
+          ingredients: ["langostinos", "queso"],
           description: "Description",
           is_fried: false,
           price: 1000,
@@ -68,6 +68,53 @@ describe("Menu component", () => {
     expect(screen.getAllByTestId("mock-sushi-card")).toHaveLength(2);
     expect(screen.getAllByTestId("mock-sushi-card")[0]).toHaveTextContent("Pacú");
   });
+
+  test("It renders the last card in the middle if items are odd", () => {
+    const oddCategories = [
+      {
+        name: "Langostinos",
+        items: [
+          {
+            id: 1,
+            name: "langostinos2",
+            ingredients: ["langostinos", "queso"],
+            description: "Description",
+            is_fried: false,
+            price: 1000,
+            image: "/img.jpg",
+            pieces: 5
+
+          },
+          {
+            id: 2,
+            name: "langostinos3",
+            ingredients: ["langostinos", "queso"],
+            description: "Description",
+            is_fried: false,
+            price: 1000,
+            image: "/img.jpg",
+            pieces: 5
+          },
+          {
+            id: 3,
+            name: "langostinos3",
+            ingredients: ["langostinos", "queso"],
+            description: "Description",
+            is_fried: false,
+            price: 1000,
+            image: "/img.jpg",
+            pieces: 5
+          }
+
+        ]
+      }
+    ]
+
+    render(<Menu categories={oddCategories} />);
+
+    const items = screen.getAllByTestId("menu-item");
+    expect(items[2]).toHaveClass("md:col-span-2");
+  })
 
 });
 
