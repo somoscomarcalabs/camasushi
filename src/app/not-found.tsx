@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const IMAGE_404_LIGHT = '/images/ui/404-light-transparente.png';
-const IMAGE_404_DARK = '/images/ui/404-dark-transparente.png';
+const IMAGE_404_LIGHT = '/images/ui/404-light-transparent.png';
+const IMAGE_404_DARK = '/images/ui/404-dark-transparent.png';
 export const IMAGE_404_ALT_TEXT = 'Error 404 - Página no encontrada'
 
 export default function NotFound() {
