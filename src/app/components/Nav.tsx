@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "#menu", label: "Menu" },
   { href: "#about", label: "Nosotros" },
-  { href: "#contact", label: "Contacto" },
+  { href: "#location", label: "Ubicación" },
 ];
 
 type Props = {

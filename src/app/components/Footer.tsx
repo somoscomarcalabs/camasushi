@@ -1,12 +1,12 @@
 'use client';
 import Image from "next/image";
 
-import { whatsappUrl, instagramUrl } from "@/features/contact/contact";
+import { whatsappUrl, instagramUrl } from "@/features/contact/info";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
-      <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8">
+    <footer className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
+      < div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8" >
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Logo del pez */}
           <div className="order-1 sm:order-1 w-full sm:w-auto flex justify-center sm:justify-start">
@@ -79,7 +79,7 @@ export default function Footer() {
         <div className="mt-4 border-t border-muted pt-4 text-center text-sm text-muted-foreground font-bold">
           <p>© 2025 CamaSushi. Todos los derechos reservados.</p>
         </div>
-      </div>
-    </footer>
+      </div >
+    </footer >
   );
 }
