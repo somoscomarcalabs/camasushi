@@ -54,6 +54,14 @@ describe('NotFound page', () => {
     expect(darkImageSrc?.getAttribute('src')).toContain('404-dark-transparente.png')
   })
 
+  test('it renders 404 light image when browser uses light theme', () => {
+    setupMatchMediaMock('light')
+    render(<NotFound />)
+    const images = screen.getAllByAltText(IMAGE_404_ALT_TEXT)
+    const lightImageSrc = images.find(img => img.getAttribute('src')?.includes('404-light-transparente.png'));
+    expect(lightImageSrc?.getAttribute('src')).toContain('404-light-transparente.png')
+  })
+
   test('it has a link/button that goes to the homepage', () => {
     render(<NotFound />);
     const link = screen.getByRole('link', { name: /Volver a Inicio/i }) as HTMLAnchorElement;
