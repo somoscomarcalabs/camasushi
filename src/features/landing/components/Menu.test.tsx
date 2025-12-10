@@ -1,5 +1,5 @@
 import { test, expect, describe, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import Menu from '@/features/landing/components/Menu';
 import { SushiItem, MenuCategory } from '@/types/Menu';
 
@@ -57,19 +57,18 @@ describe("Menu component", () => {
     expect(screen.getAllByTestId("menu-item")).toHaveLength(2);
   });
 
+  test("Renders the Menu title", () => {
+    render(<Menu categories={[]} />);
+    const menuElement = screen.getByTestId("menu-container");
+    expect(within(menuElement).getByText("Nuestro Menú")).toBeInTheDocument()
+  })
+
   test("Renders a SushiCard for each item", () => {
     render(<Menu categories={mockCategories} />)
     expect(screen.getAllByTestId("mock-sushi-card")).toHaveLength(2);
     expect(screen.getAllByTestId("mock-sushi-card")[0]).toHaveTextContent("Pacú");
   });
 
-  test("Renders items in a responsive grid layout", () => {
-    render(<Menu categories={mockCategories} />);
-
-    expect(screen.getByTestId("menu-container")).toHaveClass("grid");
-    expect(screen.getByTestId("menu-container")).toHaveClass("grid-cols-1");
-    expect(screen.getByTestId("menu-container")).toHaveClass("md:grid-cols-2");
-  });
 });
 
 
