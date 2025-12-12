@@ -68,13 +68,13 @@
           "id": 5,
           "name": "Langostinos al Pimentón",
           "ingredients": [
-            "Langostinos salteados con pimentón",
+            "Langostinos al pimentón",
             "queso crema saborizado",
             "palta",
             "alga nori",
             "rebozado"
           ],
-          "description": "Langostinos salteados en pimentón que le dan un toque ahumado único, combinados con queso crema saborizado y palta.",
+          "description": "Langostinos salteados en pimentón que le dan un ahumado único, con queso crema y palta.",
           "is_fried": true,
           "price": 5400,
           "image": "/images/rolls/langostino-pimentón.png",
@@ -200,10 +200,10 @@
           "id": 13,
           "name": "Pickes",
           "ingredients": ["Pickes", "queso crema saborizado", "alga nori"],
-          "description": "",
+          "description": "*Para paladares que buscan contraste.* La acidez crocante de los pickles contra el queso crema saborizado.",
           "is_fried": false,
           "price": 4900,
-          "image": "/images/rolls/pickles.jpg",
+          "image": "/images/rolls/pickles.png",
           "pieces": 5
         }
       ]
@@ -221,10 +221,10 @@
             "alga nori",
             "mix de semillas de sesamo"
           ],
-          "description": "",
+          "description": "*La tríada perfecta.* Atun, palta y queso crema. Envuelto en mix de sésamo que aporta ese toque tostado. Equilibrado y fresco.",
           "is_fried": false,
           "price": 5300,
-          "image": "/images/rolls/atun.jpg",
+          "image": "/images/rolls/atun-clasico.png",
           "pieces": 5
         },
         {
@@ -237,10 +237,10 @@
             "alga nori",
             "rebozado"
           ],
-          "description": "",
+          "description": "*Una pieza caliente*. La intensidad del atún y el dulzor ahumado del morron asado.",
           "is_fried": true,
           "price": 5500,
-          "image": "/images/rolls/atun-morron.jpg",
+          "image": "/images/rolls/atun-morron.png",
           "pieces": 5
         }
       ]
