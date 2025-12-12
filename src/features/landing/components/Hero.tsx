@@ -11,6 +11,7 @@ const Hero = () => {
           src="/images/ui/logo-vector.webp"
           alt="camasushi-logo"
           fill
+          sizes="(max-width: 768px) 192px, 600px"
           className="object-contain"
           priority
         />

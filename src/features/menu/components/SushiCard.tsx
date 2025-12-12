@@ -33,6 +33,7 @@ export default function SushiCard({ sushi }: SushiProps) {
             src={sushi.image}
             alt={sushi.name}
             fill
+            sizes="(max-width: 768px) 144px, 144px"
             className="rounded-full rounded-full object-cover transition-transform scale-[1.3] duration-500 group-hover:rotate-6 group-hover:scale-150"
           />
           {sushi.is_fried && (

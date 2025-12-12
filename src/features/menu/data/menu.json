@@ -58,7 +58,7 @@
           "id": 4,
           "name": "Langostino Golf",
           "ingredients": ["Langostinos", "salsa golf", "palta", "alga nori"],
-          "description": "*Sabor tradicional*.\nTierno langostino, corazon de salsa golf y palta fresca.",
+          "description": "*Sabor tradicional*.\nTierno langostino, corazón de salsa golf y palta fresca.",
           "is_fried": false,
           "price": 5400,
           "image": "/images/rolls/langostino-golf.png",
@@ -96,7 +96,7 @@
           "ingredients": [
             "Langostino",
             "perla de arroz",
-            "mix de semilas de sesamo"
+            "mix de semillas de sésamo"
           ],
           "description": "Langostino fresco y tierno sobre una base de arroz de sushi, sellado con una fina capa de alga nori.\nElegancia en un bocado.",
           "is_fried": false,
@@ -113,11 +113,11 @@
           "id": 8,
           "name": "Clásico de Salmón",
           "ingredients": [
-            "Salmon",
+            "Salmón",
             "queso crema saborizado",
             "palta",
             "alga nori",
-            "mix de semillas de sesamo"
+            "mix de semillas de sésamo"
           ],
           "description": "*El favorito de todos*. Salmón y palta que se funden con el untuoso queso crema.\nCoronado con sésamo.",
           "is_fried": false,
@@ -129,12 +129,12 @@
           "id": 9,
           "name": "Salmón cocido",
           "ingredients": [
-            "Salmon cocido con miel y mostaza",
+            "Salmón cocido con miel y mostaza",
             "queso crema saborizado",
             "alga nori",
-            "mix de semillas de sesamo"
+            "mix de semillas de sésamo"
           ],
-          "description": "*Un roll cocido agridulce*. Tiras de samón cocido con miel y mostaza, suave queso crema saborizado y un topping de sésamo.",
+          "description": "*Un roll cocido agridulce*. Tiras de salmón cocido con miel y mostaza, suave queso crema saborizado y un topping de sésamo.",
           "is_fried": false,
           "price": 5700,
           "image": "/images/rolls/salmon-cocido.png",
@@ -144,9 +144,9 @@
           "id": 10,
           "name": "Nigiri de Salmón",
           "ingredients": [
-            "Salmon",
+            "Salmón",
             "perla de arroz",
-            "mix de semillas de sesamo"
+            "mix de semillas de sésamo"
           ],
           "description": "*Tierno lomo de salmón de primera calidad* dispuesto sobre una base de arroz.",
           "is_fried": false,
@@ -167,9 +167,9 @@
             "queso crema saborizado",
             "palta",
             "alga nori",
-            "mix de semillas de sesamo"
+            "mix de semillas de sésamo"
           ],
-          "description": "*Un roll equilibrado*. Kanikama, palta, y el corazon de queso crema saborizado. Mix de sésamo.",
+          "description": "*Un roll equilibrado*. Kanikama, palta, y el corazón de queso crema saborizado. Mix de sésamo.",
           "is_fried": false,
           "price": 5200,
           "image": "/images/rolls/kanikama-clasico.png",
@@ -183,7 +183,7 @@
             "queso crema saborizado",
             "palta",
             "alga nori",
-            "mix de semillas de sesamo"
+            "mix de semillas de sésamo"
           ],
           "description": "*El sabor delicado del Kanikama* mezclado con palta fresca. Todo unido por un toque de salsa golf.",
           "is_fried": false,
@@ -219,9 +219,9 @@
             "queso crema saborizado",
             "palta",
             "alga nori",
-            "mix de semillas de sesamo"
+            "mix de semillas de sésamo"
           ],
-          "description": "*La tríada perfecta.* Atun, palta y queso crema. Envuelto en mix de sésamo que aporta ese toque tostado. Equilibrado y fresco.",
+          "description": "*La tríada perfecta.* Atún, palta y queso crema. Envuelto en mix de sésamo que aporta ese toque tostado. Equilibrado y fresco.",
           "is_fried": false,
           "price": 5300,
           "image": "/images/rolls/atun-clasico.png",
@@ -237,7 +237,7 @@
             "alga nori",
             "rebozado"
           ],
-          "description": "*Una pieza caliente*. La intensidad del atún y el dulzor ahumado del morron asado.",
+          "description": "*Una pieza caliente*. La intensidad del atún y el dulzor ahumado del morrón asado.",
           "is_fried": true,
           "price": 5500,
           "image": "/images/rolls/atun-morron.png",
