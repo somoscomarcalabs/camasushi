@@ -17,18 +17,22 @@ export default function Footer() {
                 src="/images/ui/pez-light.png"
                 alt="CamaSushi Logo"
                 width={100}
-                height={30}
+                height={40}
+                sizes="100px"
                 className="h-auto block dark:hidden"
                 priority={false}
+                style={{ width: '100px', height: 'auto' }}
               />
               {/* Logo para dark mode */}
               <Image
                 src="/images/ui/pez-dark.png"
                 alt="CamaSushi Logo"
                 width={100}
-                height={30}
+                height={40}
+                sizes="100px"
                 className="h-auto hidden dark:block"
                 priority={false}
+                style={{ height: 'auto', width: '100px' }}
               />
             </div>
           </Link>
