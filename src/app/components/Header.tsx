@@ -14,7 +14,7 @@ export default function Header() {
         {/* LOGO */}
         <Link href="/" className="pl-0 ml-4 relative h-20 w-25">
           <Image
-            src="/images/ui/pez-light.png"
+            src="/images/ui/camaSushiLogo-light.png"
             alt="Logo"
             fill
             sizes="(max-width: 768px) 100px, 150px"
@@ -24,7 +24,7 @@ export default function Header() {
           />
 
           <Image
-            src="/images/ui/pez-dark.png"
+            src="/images/ui/camaSushiLogo-dark.png"
             alt="LogoDark"
             fill
             sizes="(max-width: 768px) 100px, 150px"
