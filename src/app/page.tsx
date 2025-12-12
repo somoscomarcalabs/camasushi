@@ -2,7 +2,7 @@ import About from "@/features/landing/components/About";
 import Location from "@/features/landing/components/Location";
 import Hero from "@/features/landing/components/Hero";
 import Menu from "@/features/landing/components/Menu";
-import menuData from '@/features/menu/data/menu';
+import menuData from '@/features/menu/data/menu.json';
 import { MenuCategory } from "@/types/Menu";
 
 export default function Home() {
