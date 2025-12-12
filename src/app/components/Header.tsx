@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useState } from "react";
+import Link from 'next/link';
 import Nav from '@/app/components/Nav';
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
       <div className="relative w-full flex items-center">
 
         {/* LOGO */}
-        <div className="pl-0 ml-4 relative h-20 w-25">
+        <Link href="/" className="pl-0 ml-4 relative h-20 w-25">
           <Image
             src="/images/ui/pez-light.png"
             alt="Logo"
@@ -31,7 +32,7 @@ export default function Header() {
             priority={false}
             loading="eager"
           />
-        </div>
+        </Link>
 
         <Nav isMobile={false} />
 
@@ -58,6 +59,6 @@ export default function Header() {
           <Nav isMobile={true} onLinkClick={() => setOpenMenu(false)} />
         </div>
       </div>
-    </header>
+    </header >
   );
 }

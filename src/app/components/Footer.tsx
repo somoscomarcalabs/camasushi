@@ -1,15 +1,16 @@
 'use client';
 import Image from "next/image";
+import Link from 'next/link';
 
 import { whatsappUrl, instagramUrl } from "@/features/contact/info";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
+    <footer className="w-full bg-[#ff7d52] dark:bg-secondary text-foreground dark:text-muted backdrop-blur-sm border-t border-muted">
       < div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:px-8" >
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Logo del pez */}
-          <div className="order-1 sm:order-1 w-full sm:w-auto flex justify-center sm:justify-start">
+          <Link href="/" className="order-1 sm:order-1 w-full sm:w-auto flex justify-center sm:justify-start">
             <div className="flex flex-col items-center sm:items-start -mt-2 sm:mt-0">
               {/* Logo para light mode */}
               <Image
@@ -30,7 +31,7 @@ export default function Footer() {
                 priority={false}
               />
             </div>
-          </div>
+          </Link>
 
           {/*  Información de contacto */}
           <div className="order-3 sm:order-2 w-full sm:w-auto text-center">
@@ -47,7 +48,7 @@ export default function Footer() {
           <div className="order-2 sm:order-3 w-full sm:w-auto flex justify-center sm:justify-end">
             <div className="flex gap-4 items-center">
               <a
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="text-muted-foreground transition-colors hover:text-secondary dark:hover:text-primary"
                 data-alt="WhatsApp icon"
                 href={whatsappUrl}
                 target="_blank"
@@ -60,7 +61,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="text-muted-foreground transition-colors hover:text-secondary dark:hover:text-primary"
                 data-alt="Instagram icon"
                 href={instagramUrl}
                 target="_blank"
