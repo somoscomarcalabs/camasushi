@@ -244,31 +244,6 @@
           "pieces": 5
         }
       ]
-    },
-    {
-      "name": "Extras",
-      "items": [
-        {
-          "id": 16,
-          "name": "Palillos",
-          "ingredients": [],
-          "description": "",
-          "is_fried": false,
-          "price": 300,
-          "image": "",
-          "pieces": 1
-        },
-        {
-          "id": 17,
-          "name": "Sachet de soja",
-          "ingredients": [],
-          "description": "",
-          "is_fried": false,
-          "price": 400,
-          "image": "",
-          "pieces": 1
-        }
-      ]
     }
   ]
 }
