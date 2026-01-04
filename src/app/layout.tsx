@@ -15,8 +15,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CamaSushi!",
-  description: "El mejor sushi de Puerto Rico!",
+  title: "CamaSushi",
+  description: "El mejor sushi de Puerto Rico",
+  openGraph: {
+    title: "Camasushi",
+    description: "Para amantes del buen sushi.",
+    images: [{
+      url: "/images/rolls/salmon-clasico.png",
+      width: 300,
+      height: 300,
+      alt: "clasico salmon"
+    }]
+  }
 };
 
 export default function RootLayout({
