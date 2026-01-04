@@ -44,6 +44,7 @@ export default function Footer() {
               <p className="text-sm text-muted-foreground">Puerto Rico, Misiones</p>
               <p className="text-sm text-muted-foreground">Viernes y Sábados</p>
               <p className="text-sm text-muted-foreground">Pedidos con anticipación</p>
+              <p className="text-sm text-muted-foreground">Minimo de pedido - 20 piezas</p>
               <p className="text-sm text-muted-foreground font-bold mt-1">3743 417060 / 3743 502117</p>
             </div>
           </div>

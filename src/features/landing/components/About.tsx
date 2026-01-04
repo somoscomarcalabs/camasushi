@@ -67,6 +67,26 @@ export default function About() {
                       </div>
                     </div>
                   </div>
+                  {/*Minimo de Piezas*/}
+                  <div className="p-6 bg-background/50 dark:bg-secondary/30 rounded-xl">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="p-2 bg-primary/10 dark:bg-accent/10 rounded-lg">
+                        <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <h3 className="font-clash text-xl font-bold">
+                        Mínimo de Piezas por pedido
+                      </h3>
+                    </div>
+                    <div className="space-y-3 pl-11">
+                      <div className="flex justify-between">
+                        <span className="text-sm font-satoshi font-bold">
+                          20 piezas
+                        </span>
+                      </div>
+                    </div>
+                  </div>
 
                   {/* Ubicación y Contacto lado a lado en desktop */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
