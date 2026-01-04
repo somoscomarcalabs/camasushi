@@ -10,6 +10,9 @@ export default function Menu({ categories }: MenuProps) {
   return (
     <div data-testid="menu-container" id="menu" className='grid grid-cols-1 md:p-[0.5rem] p-[1.5rem] justify-items-center bg-background dark:bg-foreground'>
       <h1 className='text-6xl mt-20 text-center dark:text-white'>Nuestro Menú</h1>
+      <div className='text-2xl w-full text-center flex items-center justify-center h-24 dark:text-white'>
+        <h2>Nuestro Mínimo de piezas por pedido es de <span className='text-primary'>20 piezas</span></h2>
+      </div>
       {
         categories.map((category) => (
           <div key={category.name}>
@@ -30,6 +33,7 @@ export default function Menu({ categories }: MenuProps) {
           </div>
         ))
       }
+
     </div >
   )
 }
