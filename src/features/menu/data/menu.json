@@ -14,7 +14,7 @@
           ],
           "description": "*Una pieza de sushi con un toque local*. Relleno de pacú y queso crema saborizado, rebozado.",
           "is_fried": true,
-          "price": 5300,
+          "price": 5500,
           "image": "/images/rolls/pacu.png",
           "pieces": 5
         },
@@ -30,7 +30,7 @@
           ],
           "description": "Roll único con tierna carne de pacú, balanceado por el queso crema y el ahumado del morrón asado.",
           "is_fried": true,
-          "price": 5300,
+          "price": 5700,
           "image": "/images/rolls/pacu-morron.png",
           "pieces": 5
         }
@@ -50,7 +50,7 @@
           ],
           "description": "*La dupla imbatible de langostino y palta* envuelta en una explosión de queso crema.",
           "is_fried": false,
-          "price": 5400,
+          "price": 5600,
           "image": "/images/rolls/langostino-clasico.png",
           "pieces": 5
         },
@@ -60,7 +60,7 @@
           "ingredients": ["Langostinos", "salsa golf", "palta", "alga nori"],
           "description": "*Sabor tradicional*.\nTierno langostino, corazón de salsa golf y palta fresca.",
           "is_fried": false,
-          "price": 5400,
+          "price": 5600,
           "image": "/images/rolls/langostino-golf.png",
           "pieces": 5
         },
@@ -76,7 +76,7 @@
           ],
           "description": "Langostinos salteados en pimentón que le dan un ahumado único, con queso crema y palta.",
           "is_fried": true,
-          "price": 5400,
+          "price": 5600,
           "image": "/images/rolls/langostino-pimentón.png",
           "pieces": 5
         },
@@ -86,7 +86,7 @@
           "ingredients": ["Langostinos", "rebozado"],
           "description": "*Exquisito langostino en tempura*.\nCobertura crujiente y caliente con la ternura del langostino.",
           "is_fried": true,
-          "price": 1500,
+          "price": 1700,
           "image": "/images/rolls/langostino-rebozado.png",
           "pieces": 1
         },
@@ -100,7 +100,7 @@
           ],
           "description": "Langostino fresco y tierno sobre una base de arroz de sushi, sellado con una fina capa de alga nori.\nElegancia en un bocado.",
           "is_fried": false,
-          "price": 1600,
+          "price": 1800,
           "image": "/images/rolls/nigiri-langostino.png",
           "pieces": 1
         }
@@ -121,7 +121,7 @@
           ],
           "description": "*El favorito de todos*. Salmón y palta que se funden con el untuoso queso crema.\nCoronado con sésamo.",
           "is_fried": false,
-          "price": 5700,
+          "price": 5900,
           "image": "/images/rolls/salmon-clasico.png",
           "pieces": 5
         },
@@ -136,7 +136,7 @@
           ],
           "description": "*Un roll cocido agridulce*. Tiras de salmón cocido con miel y mostaza, suave queso crema saborizado y un topping de sésamo.",
           "is_fried": false,
-          "price": 5700,
+          "price": 5900,
           "image": "/images/rolls/salmon-cocido.png",
           "pieces": 5
         },
@@ -150,7 +150,7 @@
           ],
           "description": "*Tierno lomo de salmón de primera calidad* dispuesto sobre una base de arroz.",
           "is_fried": false,
-          "price": 1700,
+          "price": 1900,
           "image": "/images/rolls/nigiri-salmon.png",
           "pieces": 1
         }
@@ -171,7 +171,7 @@
           ],
           "description": "*Un roll equilibrado*. Kanikama, palta, y el corazón de queso crema saborizado. Mix de sésamo.",
           "is_fried": false,
-          "price": 5200,
+          "price": 5400,
           "image": "/images/rolls/kanikama-clasico.png",
           "pieces": 5
         },
@@ -187,7 +187,7 @@
           ],
           "description": "*El sabor delicado del Kanikama* mezclado con palta fresca. Todo unido por un toque de salsa golf.",
           "is_fried": false,
-          "price": 5200,
+          "price": 5400,
           "image": "/images/rolls/kanikama-golf.png",
           "pieces": 5
         }
@@ -202,7 +202,7 @@
           "ingredients": ["Pickes", "queso crema saborizado", "alga nori"],
           "description": "*Para paladares que buscan contraste.* La acidez crocante de los pickles contra el queso crema saborizado.",
           "is_fried": false,
-          "price": 4900,
+          "price": 5100,
           "image": "/images/rolls/pickles.png",
           "pieces": 5
         }
@@ -223,7 +223,7 @@
           ],
           "description": "*La tríada perfecta.* Atún, palta y queso crema. Envuelto en mix de sésamo que aporta ese toque tostado. Equilibrado y fresco.",
           "is_fried": false,
-          "price": 5300,
+          "price": 5500,
           "image": "/images/rolls/atun-clasico.png",
           "pieces": 5
         },
@@ -239,7 +239,7 @@
           ],
           "description": "*Una pieza caliente*. La intensidad del atún y el dulzor ahumado del morrón asado.",
           "is_fried": true,
-          "price": 5500,
+          "price": 5700,
           "image": "/images/rolls/atun-morron.png",
           "pieces": 5
         }
