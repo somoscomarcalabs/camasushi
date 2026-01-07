@@ -244,6 +244,31 @@
           "pieces": 5
         }
       ]
+    },
+    {
+      "name": "Extras",
+      "items": [
+        {
+          "id": 16,
+          "name": "Palitos",
+          "ingredients": [""],
+          "description": "Palitos de madera para sushi.",
+          "is_fried": false,
+          "price": 300,
+          "image": "/images/rolls/palitos.png",
+          "pieces": 1
+        },
+        {
+          "id": 17,
+          "name": "Salsa de soja",
+          "ingredients": [""],
+          "description": "Salsa de soja en sachet de 10g.",
+          "is_fried": false,
+          "price": 400,
+          "image": "/images/rolls/soja.png",
+          "pieces": 1
+        }
+      ]
     }
   ]
 }
