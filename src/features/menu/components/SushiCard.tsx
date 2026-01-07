@@ -58,9 +58,11 @@ export default function SushiCard({ sushi }: SushiProps) {
           {/* Hidden Ingredients (Revealed on Hover) */}
           <div className="grid md:grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr]">
             <div className="overflow-hidden">
-              <p className="mt-3 text-sm italic text-orange-400/90">
-                Ingredientes: {sushi.ingredients.join(", ")}
-              </p>
+              {sushi.ingredients && sushi.ingredients.length > 0 && sushi.ingredients[0] !== "" && (
+                <p className="mt-3 text-sm italic text-orange-400/90">
+                  Ingredientes: {sushi?.ingredients.join(", ")}
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -71,7 +73,7 @@ export default function SushiCard({ sushi }: SushiProps) {
             <span className="text-xl font-bold text-gray-200">
               x{sushi.pieces}
             </span>
-            <span className="text-sm font-medium text-gray-400">unidades</span>
+            <span className="text-sm font-medium text-gray-400">{sushi.pieces > 1 ? "unidades" : "unidad"}</span>
           </div>
           <span className="mt-1 text-3xl font-bold text-primary">
             ${sushi.price.toLocaleString("es-AR")}
