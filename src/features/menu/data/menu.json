@@ -262,9 +262,9 @@
           "id": 17,
           "name": "Salsa de soja",
           "ingredients": [""],
-          "description": "Salsa de soja en sachet de 10g.",
+          "description": "Salsa de soja de 20gr.",
           "is_fried": false,
-          "price": 400,
+          "price": 800,
           "image": "/images/rolls/soja.png",
           "pieces": 1
         }
