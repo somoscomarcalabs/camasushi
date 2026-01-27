@@ -246,10 +246,26 @@
       ]
     },
     {
-      "name": "Extras",
+      "name": "Especiales",
       "items": [
         {
           "id": 16,
+          "name": "Cuadrados de Sushi",
+          "ingredients": [
+            "Consultar por opciones de rellenos y precio por el canal de WhatsApp"
+          ],
+          "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
+          "is_fried": false,
+          "image": "/images/rolls/especial.png",
+          "pieces": 1
+        }
+      ]
+    },
+    {
+      "name": "Extras",
+      "items": [
+        {
+          "id": 17,
           "name": "Palitos",
           "ingredients": [""],
           "description": "Palitos de madera para sushi.",
@@ -259,10 +275,10 @@
           "pieces": 1
         },
         {
-          "id": 17,
+          "id": 18,
           "name": "Salsa de soja",
           "ingredients": [""],
-          "description": "Salsa de soja de 25gr.",
+          "description": "Nuestra salsa de soja de 25gr. ideal para agregarle al sushi",
           "is_fried": false,
           "price": 800,
           "image": "/images/rolls/soja.png",

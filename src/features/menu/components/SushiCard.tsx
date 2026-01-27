@@ -75,9 +75,11 @@ export default function SushiCard({ sushi }: SushiProps) {
             </span>
             <span className="text-sm font-medium text-gray-400">{sushi.pieces > 1 ? "unidades" : "unidad"}</span>
           </div>
-          <span className="mt-1 text-3xl font-bold text-primary">
-            ${sushi.price.toLocaleString("es-AR")}
-          </span>
+          {sushi.price && (
+            <span className="mt-1 text-3xl font-bold text-primary">
+              ${sushi?.price.toLocaleString("es-AR")}
+            </span>
+          )}
         </div>
 
       </div>
