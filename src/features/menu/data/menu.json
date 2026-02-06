@@ -255,7 +255,7 @@
             "Consultar por opciones de rellenos y precio por el canal de WhatsApp"
           ],
           "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
-          "is_fried": false,
+          "is_fried": true,
           "image": "/images/rolls/especial.png",
           "pieces": 1
         }
