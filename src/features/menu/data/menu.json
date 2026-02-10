@@ -246,17 +246,78 @@
       ]
     },
     {
-      "name": "Especiales",
+      "name": "Cuadrados de Sushi Rebozados",
       "items": [
         {
           "id": 16,
-          "name": "Cuadrados de Sushi Rebozados",
+          "name": "Cuadrado de Salmón",
           "ingredients": [
-            "Consultar por opciones de rellenos y precio por el canal de WhatsApp"
+            "Salmón, palta, queso crema saborizado, alga nori, rebozado"
           ],
           "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
           "is_fried": true,
+          "price": 6800,
           "image": "/images/rolls/especial.png",
+          "pieces": 1
+        },
+        {
+          "id": 17,
+          "name": "Cuadrado de Langostinos",
+          "ingredients": [
+            "Langostinos al pimentón, queso crema saborizado, palta, alga nori, rebozado"
+          ],
+          "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
+          "is_fried": true,
+          "price": 6500,
+          "image": "/images/rolls/especial-langostinos.png",
+          "pieces": 1
+        },
+        {
+          "id": 18,
+          "name": "Cuadrado de Atún Clásico",
+          "ingredients": [
+            "Lomos de atún, queso crema saborizado, palta, alga nori, rebozado"
+          ],
+          "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
+          "is_fried": true,
+          "price": 6400,
+          "image": "/images/rolls/especial-atun.png",
+          "pieces": 1
+        },
+        {
+          "id": 19,
+          "name": "Cuadrado de Atún con morrones",
+          "ingredients": [
+            "Atún, morrones asados, queso crema saborizado, palta, alga nori, rebozado"
+          ],
+          "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
+          "is_fried": true,
+          "price": 6600,
+          "image": "/images/rolls/especial-morrones.png",
+          "pieces": 1
+        },
+        {
+          "id": 20,
+          "name": "Cuadrado de Kanikama",
+          "ingredients": [
+            "Kanikama, queso crema saborizado, palta, alga nori, rebozado"
+          ],
+          "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
+          "is_fried": true,
+          "price": 6300,
+          "image": "/images/rolls/especial-kanikama.png",
+          "pieces": 1
+        },
+        {
+          "id": 21,
+          "name": "Cuadrado de Pickles",
+          "ingredients": [
+            "Pickles, queso crema saborizado, palta, alga nori, rebozado"
+          ],
+          "description": "Una manera distinta de comer sushi, con la calidad de siempre pero con mucho más relleno",
+          "is_fried": true,
+          "price": 6000,
+          "image": "/images/rolls/especial-pickles.png",
           "pieces": 1
         }
       ]
@@ -265,7 +326,7 @@
       "name": "Extras",
       "items": [
         {
-          "id": 17,
+          "id": 22,
           "name": "Palitos",
           "ingredients": [""],
           "description": "Palitos de madera para sushi.",
@@ -275,7 +336,7 @@
           "pieces": 1
         },
         {
-          "id": 18,
+          "id": 23,
           "name": "Salsa de soja",
           "ingredients": [""],
           "description": "Nuestra salsa de soja de 25gr. ideal para agregarle al sushi",
